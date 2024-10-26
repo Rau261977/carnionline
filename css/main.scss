@@ -1,0 +1,917 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+//$body-bg: #000; Ejemplo de como sobreescribir  <=========¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+
+
+$primary: #ffca00;
+$gray: #E6E6E6;
+
+$theme-colors: (
+    "primary": $primary,
+    "gray": $gray
+);
+
+// crear tu propio mapa
+
+$custom-color: (
+    "icon-background": #ffca00
+);
+
+body {
+    font-family: 'Urbanist', sans-seri !important;
+    overflow-x: hidden;
+
+}
+
+//merge maps
+$theme-colors: map-merge($theme-colors , $custom-color );
+
+$container-padding-x: 1rem;
+
+//@import "product";
+@import "./bootstrap/scss/bootstrap";
+
+
+// Then add additional custom code here
+
+/************* HEADER ***********************/
+
+@media (min-width: 992px) {
+    .container-lg, .container-md, .container-sm, .container {
+        max-width: 98% !important;
+    }
+}
+
+.container-lg, .container-md, .container-sm, .container {
+    max-width: 98% !important;
+}
+
+
+.announcement-bar {
+    font-size: 0.8rem;
+    border-bottom: 1px solid var(--bs-gray);
+    background-color: #ffca00;
+
+    &_list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: inline-flex;
+        margin: 0 -10px;
+        color: #000000;
+
+        li {
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+
+            .bi {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            margin-right: 6px;
+            }
+        }
+    }
+   
+}
+
+
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid var(--bs-gray);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+
+
+    .aws-search-field {
+        font-size: 0.9rem;
+        padding-left: 1.4rem;
+        border-radius: 20px !important;
+    }
+}
+
+.custom-logo {
+    width: 6rem; 
+}
+
+@media (max-width: 768px) { 
+    .custom-logo {
+        padding-top: 10px;
+        width: 12rem; 
+    }
+}
+
+@media (max-width: 576px) { 
+    .custom-logo {
+        padding-top: 10px;
+        width: 10rem; 
+    }
+}
+/* Ajustes para pantallas extra grandes (1200px o más) */
+@media (min-width: 1200px) {
+    .logo-container-xl {
+        justify-content: flex-start !important; 
+    }
+}
+
+/* Ajustes para pantallas más pequeñas que 1200px */
+@media (max-width: 1199px) {
+    .logo-container-xl {
+        justify-content: center; /* Centra el contenido horizontalmente */
+    }
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .main-navigation {
+        text-align: center;
+    }
+}
+
+
+//* Menu principal */
+.main-navigation {
+    font-weight: 500;
+    font-size: large;
+
+    a {
+        color: var(--bs-white);
+        padding: 0.6rem 1.4rem;
+    }
+    
+    a:hover {
+        background-color: transparent; /* Mantener el fondo transparente */
+        border: 1px solid #333; /* Añadir borde sólido al hacer hover */
+         /* Ajustar el radio del borde */
+    }
+
+    .menu-toggle {
+        color: $white;
+    }
+}
+
+/* Añade un estilo para asegurar el borde redondeado */
+.redondo {
+    border-radius: 1rem; /* Ajusta el valor según tu necesidad */
+    overflow: hidden; /* Asegura que el contenido no se desborde del contenedor redondeado */
+}
+
+/********************* categories *************************/
+
+
+.position-relative {
+    position: relative; /* Hace que los elementos hijos puedan posicionarse de forma relativa */
+}
+
+.card-title-overlay {
+    width: 100%;
+    position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor relativo */
+    bottom: 0px; /* Ajusta la distancia desde la parte inferior de la imagen */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translateX(-50%); /* Corrige el centrado */
+    margin: 0;
+    padding: 5px 10px; /* Ajusta el padding según sea necesario */
+    background-color:  rgba(41, 147, 182, 0.7);
+    text-align: center; /* Centra el texto */
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+
+
+/* Ajusta el título del producto */
+.product .woocommerce-loop-product__title {
+    font-size: 18px; /* Tamaño de la fuente del título */
+    margin: 10px 0; /* Espacio superior e inferior del título */
+    color: #333333; /* Color del texto */
+}
+
+
+
+/* Ajusta el botón "Añadir a la lista de deseos" */
+.woosw-btn {
+    font-size: 18px; /* Tamaño de la fuente del botón */
+    color: #f00; /* Color del texto del botón */
+    padding: 10px 15px; /* Relleno interno del botón */
+    background-color: #eee; /* Color de fondo del botón */
+    border: none; /* Borde del botón */
+    border-radius: 4px
+}
+
+
+/* Botón de lista de deseos */
+.woosw-btn {
+    position: absolute; /* Posiciona el botón de forma absoluta dentro del contenedor */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la parte derecha */
+    background-color: rgba(255, 255, 255, 0.3); /* Color de fondo con algo de transparencia */
+    border-radius: 50%; /* Hace el botón circular */
+    padding: 0px; /* Añade algo de padding para que no quede tan pegado al icono */
+    display: flex; /* Centro el icono en el botón */
+    align-items: center; /* Centro el icono en el botón verticalmente */
+    justify-content: center; /* Centro el icono en el botón horizontalmente */
+    z-index: 10; /* Asegura que el botón esté sobre la imagen */
+    opacity: 0; /* El botón es invisible */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+/* Icono dentro del botón */
+.woosw-btn-icon {
+    font-size: 20px; /* Tamaño del icono */
+    color: #f00; /* Color del icono */
+}
+
+
+/* Muestra el botón cuando el mouse está sobre el contenedor del producto */
+.product:hover .woosw-btn,
+.woosw-btn.active {
+    opacity: 1; /* El botón se vuelve visible */
+}
+
+  /* Estilo del botón del menú toggle */
+  #site-navigation .menu-toggle {
+    border:#222 !important; 
+    color: #111 !important;
+    border-radius: 10px !important;
+
+    /* Color del texto del botón toggle */
+}
+
+.search-form-container {
+    width: 200px; /* Ajusta el valor según tus necesidades */
+}
+
+.aws-container .aws-search-field {
+    height: 2rem !important; /* Ajusta la altura según lo necesites */
+}
+
+.icon-text {
+    margin-top: 5px; /* Espacio entre el ícono y el texto */
+    font-size: 14px; /* Tamaño del texto */
+    color: #313131; /* Color del texto (puedes ajustarlo según tu diseño) */
+}
+
+#woofc-count {
+    margin: 26px;
+    display: none; /* Oculta el icono inicialmente */
+    position: fixed; /* Para que el icono se mantenga visible al hacer scroll */
+    top: 20px; /* Ajusta la posición vertical del icono */
+    right: 20px; /* Ajusta la posición horizontal del icono */
+    z-index: 999; /* Asegura que el icono esté encima de otros elementos */
+}
+
+/*****************************************/
+
+
+
+/***************************************************************/
+.marquee {
+    width: 100%;
+    height: 90px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    overflow: hidden;
+  }
+  
+  .marquee li {
+    font-size: 50px;
+  }
+  
+  .marquee__content {
+    display: flex;
+    list-style: none;
+    animation: scrolling 10s linear infinite;
+  }
+  
+  .marquee__item {
+    flex-shrink: 0;
+  }
+  
+  @keyframes scrolling {
+    0% { transform: translateX(0) }
+    100% { transform: translateX(-100%) }
+  }
+
+
+  /* Estilo del contenedor del menú -----------------------------------------------------------------*/
+.menu-secundario-class {
+    padding: 0 15px; /* Espaciado superior e inferior del contenedor */
+}
+
+/* Estilo del menú */
+.menu {
+    list-style: none; /* Elimina los puntos de lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: end; /* Centra los elementos horizontalmente */
+}
+
+
+/* Estilo de los elementos del menú */
+.menu li {
+    margin: 0; /* Espaciado entre los elementos del menú */
+}
+
+/* Estilo de los enlaces del menú */
+.menu li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Color del texto de los enlaces */
+    font-weight:500; /* Hace que el texto sea negrita */
+    padding: 5px; /* Espaciado interno de los enlaces */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilo de los enlaces del menú al pasar el ratón */
+.menu li a:hover,
+.menu li a:focus {
+    color: #0056b3; /* Color del texto cuando se pasa el ratón o se enfoca */
+}
+
+.menu-secundario-container {
+    height: auto; /* O define una altura mínima si es necesario */
+}
+
+.menu-secundario-class {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Centra horizontalmente los elementos */
+    justify-content: left;
+    gap: 1px; /* Espacio entre elementos */
+}
+
+.menu-secundario-class ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    width: 100%; /* Asegura que el contenedor de la lista ocupe todo el ancho */
+}
+
+.menu-secundario-class li {
+    width: 100%; /* Asegura que cada elemento ocupe todo el ancho disponible */
+    text-align: left; /* Centra el texto dentro de cada elemento */
+    display: flex; /* Cambia a flex para el alineado interno */
+    justify-content: left; /* Centra el contenido dentro de cada li */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+
+
+
+/* Estilo del enlace */
+.nav-link {
+    display: flex; /* Usa Flexbox */
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    padding: 0; /* Elimina el padding del enlace */
+}
+
+/* Establecer un área activa extendida para el submenú */
+.menu-item-has-children {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    z-index: 10;
+    padding: 10px 0; /* Extiende el área hacia abajo para que el cursor tenga margen */
+}
+
+.menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+
+/* Extender el área activa para submenús anidados */
+.sub-menu .menu-item-has-children:hover > .sub-menu {
+    left: 100%;
+    top: 0;
+    padding: 10px;
+}
+
+
+
+/* Estilo del ícono ----------------------------------------------*/
+.nav-link i {
+    font-size: 2rem; /* Tamaño del ícono, ajusta según tus necesidades */
+    margin-right: 0.5rem; /* Espacio entre el ícono y el texto */
+    font-weight: bolder;
+}
+
+/* Estilo del texto del ícono */
+.icon-text {
+    font-weight: bolder;
+    font-size: 1rem; /* Tamaño del texto, ajusta según tus necesidades */
+    margin-left: 0; /* Espacio entre el ícono y el texto, si es necesario */
+ /* Ajusta la altura de línea si es necesario para la alineación vertical */
+}
+
+/****************************************************************************/
+.site-footer {
+    background-color: $primary; /* Asegura que el fondo sea el mismo que la clase bg-primary de Bootstrap */
+    color: #111; 
+    font-weight: 600;
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.site-footer .row {
+    align-items: center; /* Centra verticalmente los elementos en la fila */
+}
+
+.site-footer p {
+    margin-bottom: 0; /* Elimina el margen inferior del párrafo */
+    font-size: 16px; /* Tamaño de fuente para el texto del footer */
+}
+
+.site-footer a {
+    color: rgb(17, 10, 66); /* Asegura que los enlaces sean blancos */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.site-footer a:hover {
+    color: #ffc107; /* Cambia el color al pasar el mouse por el enlace (opcional) */
+}
+
+.site-footer img {
+    max-height: 40px; /* Limita la altura máxima de la imagen */
+}
+.back-to-top {
+    position: absolute; /* Cambiado de 'fixed' a 'absolute' */
+    right: 20px; /* Distancia desde el borde derecho del contenedor */
+    bottom: 20px; /* Distancia desde el borde inferior del contenedor */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    background: #404fd7; /* Color de fondo del botón */
+    color: #fff; /* Color del icono */
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    display: flex; /* Para centrar el icono */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    opacity: 0; /* Comienza invisible */
+    visibility: hidden; /* No es visible hasta que se active */
+    transition: all 0.4s; /* Transición suave para la aparición/desaparición */
+}
+
+.back-to-top i {
+    font-size: 24px; /* Tamaño del icono */
+}
+
+.back-to-top:hover {
+    background: #333; /* Color de fondo al pasar el mouse */
+}
+
+.back-to-top.active {
+    visibility: visible; /* Hace visible el botón */
+    opacity: 1; /* Hace visible el botón */
+}
+
+.float{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+.float:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+
+/* Efecto de crecimiento al pasar el cursor sobre el título */
+.grow-title {
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Transición suave para el cambio de tamaño y color */
+}
+
+.grow-title:hover {
+    transform: scale(1.05);
+    font-weight: 600;
+    color: rgb(41, 147, 182) !important;
+}
+
+.woosw-btn.woosw-btn-added {
+    opacity: 1 !important; 
+}
+
+
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    position: relative;
+}
+
+.wishlist-button-overlay {
+    position: absolute;
+    top: 10px; /* Ajusta según necesites */
+    right: 10px; /* Ajusta según necesites */
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 5px;
+    border-radius: 50%; /* Si quieres que el botón sea circular */
+}
+
+.product-image:hover .wishlist-button-overlay {
+    background-color: rgba(255, 0, 0, 0.8); /* Cambio de color en hover, por ejemplo */
+}
+
+
+
+.onsale {
+    padding: 5px !important;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border: 2px solid rgb(41, 147, 182) !important;
+    color: rgb(41, 147, 182) !important;
+    font-size: 0.8rem !important; /* Ajustar tamaño del texto */
+    font-weight: bold !important;
+    line-height: 1.2; /* Ajustar la altura de la línea para mejorar el espaciado del texto */
+}
+/* Estilos para el elemento .onsale */
+
+body .product-container .onsale {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 55px !important; /* Ajusta el tamaño según lo que necesites */
+    height: 55px !important; /* Debe ser igual a width */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10 !important;
+}
+/********************** títulos ******************************/
+.section-title {
+    font-size: 2rem;
+    /* Tamaño del título */
+    font-weight: 700;
+    /* Negrita */
+    color: #333;
+    /* Color del texto */
+    text-align: center;
+    /* Centrado del título */
+    margin-bottom: 30px;
+    /* Espacio inferior */
+    position: relative;
+    /* Relativo para decoraciones adicionales */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    letter-spacing: 6px;
+    /* Espaciado entre letras */
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    /* Color de la decoración */
+    margin: 10px auto 0 auto;
+    /* Centrar la línea decorativa */
+    border-radius: 2px;
+    /* Bordes redondeados */
+}
+/*****************************************************************/
+/************ Product container***********************************/
+
+   /* Estilos para el contenedor de productos */
+   /* Aplica las mismas clases que ya tienes en tu tienda a los productos relacionados */
+.related.products .product {
+    /* Aquí aplicamos la clase existente que ya tienes definida para otros productos */
+    @extend .product-container; /* Esto reutiliza los estilos que ya tienes definidos */
+}
+body .product-container {
+    margin: 0.7rem -0.2rem 0.7rem -0.2rem;
+    padding: 1rem 0 0 0;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    overflow: visible;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    height: 23.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-footer {
+    display: block;
+    text-align: center;
+}
+
+.product-footer .price {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.product-footer .add-to-cart {
+    display: inline-block; /* Mantiene el botón en su tamaño natural */
+    width: auto; /* Asegura que el botón mantenga su tamaño normal */
+    max-width: 100%; /* No permitir que se expanda más allá de su contenedor */
+    padding: 0.5rem 1rem; /* Ajusta el tamaño interno si es necesario */
+    text-align: center;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd; /* Mantiene el borde */
+    cursor: pointer;
+    white-space: nowrap; /* Evita que el texto se desborde o se divida en varias líneas */
+}
+
+
+body .product-container:hover {
+    border-color: #333;
+}
+
+.woosw-btn-sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+.product-container:hover .woosw-btn-sale {
+    opacity: 1;
+    /* Mostrar el botón al pasar el ratón */
+}
+
+.woocommerce-loop-product__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.woocommerce-loop-product__title:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.woocommerce-loop-product__price {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/************************************************************************/
+
+.sale-products-container {
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/************************************************************************/
+
+/* Estilo general para el botón de agregar al carrito */
+
+
+.add_to_cart_button {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    display: inline-block !important;
+    background-color: white !important; /* Color de fondo */
+    font-size: 14px !important;
+    font-weight:600 !important;
+    padding: 7px 13px !important; /* Espaciado interno */
+    border: 2px solid $primary !important; /* Borde de 1px con color */
+    border-radius: 50px !important; /* Bordes redondeados */
+    cursor: pointer !important;
+    text-align: center !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+/* Efecto hover */
+.add_to_cart_button:hover {
+    background-color: $primary !important; /* Color de fondo al hacer hover */
+    color: white; /* Cambiar el color del texto en hover */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+/* Efecto cuando el botón es clickeado */
+.add_to_cart_button:active {
+    transform: scale(0.98); /* Efecto de clic */
+}
+
+/* Asegurar que el enlace se vea como botón */
+.add_to_cart_button {
+    text-decoration: none;
+    width: fit-content; /* Mantiene el tamaño ajustado al contenido */
+    margin-left: auto;
+    margin-right: auto; /* Centrará el botón dentro de su contenedor */
+    display: block; /* Necesario para que `margin-left` y `margin-right` funcionen correctamente */
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .add_to_cart_button {
+        padding: 12px 0;
+        font-size: 14px;
+    }
+}
+
+/****************************************************************************************/
+
+/* Oculta el icono de wishlist por defecto */
+.related.products .product .wishlist-icon {
+    display: none;
+}
+
+/* Muestra el icono cuando el producto está en hover */
+.related.products .product:hover .wishlist-icon {
+    display: block;
+    /* Opcionalmente puedes ajustar su posición */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/******************************************************************************************/
+/* Ocultar widgets en páginas de WooCommerce */
+.woocommerce-page .widget {
+    display: none;
+}
+
+.back-to-top {
+    margin-bottom: 30px; 
+    margin-right: -10px;
+}
+.msf {
+    background-color:rgb(41, 147, 182);
+   
+}
+
+.msf .menu a {
+    color: white; 
+    margin-right: 10px;
+}
+
+.whatsapp-icon {
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 110px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    z-index: 999;
+  }
+  .whatsapp-icon img {
+    display: block;
+    height: 50px;
+    width: auto;
+  }
+  @media (min-width: 576px) {
+    .whatsapp-icon {
+        right: 50px; /* Cambiar la distancia del lado derecho */
+        bottom: 70px; /* Ajustar la distancia desde el fondo */
+    }
+}
+  @media (min-width: 576px) {
+    .whatsapp-icon img {
+        height: 60px;
+    }
+
+   
+}
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  
+  
+  .whatsapp-icon span {
+    display: none;
+  }
+  
+  .whatsapp-icon:hover span {
+    color: #ffffff;
+    display: block;
+    background-color: #1a9910;
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px 30px;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    white-space: nowrap;
+  }
+  
+  .whatsapp-icon:hover span:hover {
+    background-color: #4caf50;
+    color: #ffffff;
+    transition-duration: 0.4s;
+  }
+  
+  .whatsapp-icon span {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* Cambiamos "left" a "right" */
+    transform: translateY(-50%);
+    padding: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+  
+  .custom-accesorios-image img {
+    padding: 30px; /* Ajusta el valor a lo que necesites */
+}
+
+.woocommerce .woocommerce-breadcrumb {
+    margin: 0 0 1rem;
+    padding: 1rem 0 0 1rem;
+    font-size: large;
+    font-weight: 500;
+}
+.woocommerce .woocommerce-result-count {
+    margin: 0 0 1rem 1rem;
+    font-size: larger;
+}
+/* Botón personalizado */
+.custom-btn {
+    background-color: transparent; /* Cambia el color de fondo */
+    color: #000000; /* Cambia el color del texto */
+    border: 1px solid #33333343; /* Cambia el color y grosor del borde */
+    border-radius: 5px; /* Ajusta el redondeo de las esquinas */
+    padding: 5px 10px; /* Ajusta el relleno interior del botón */
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a puntero */
+}
+
+/* Estilos en el hover (cuando se pasa el mouse sobre el botón) */
+.custom-btn:hover {
+    background-color: rgb(41, 147, 182); /* Cambia el color de fondo en hover */
+    border-color: #000000; /* Cambia el color del borde en hover */
+    color: #fff; /* Mantiene el color del texto en hover */
+}
+/* Personalizaciones específicas solo para el formulario dentro de custom-search */
+.custom-search .aws-search-form input[type="search"] {
+    max-width: 400px; /* Ajuste personalizado para este formulario */
+    font-size: 15px;
+    padding-left: 1rem;
+    font-weight: 500;
+}
+
+.custom-search .aws-search-form button {
+    font-size: 14px;
+    background-color: #ffffff; /* Color de botón personalizado */
+}
+
+.custom-search .aws-search-form label {
+    font-size: 20px;
+}
+
+.woocommerce .woocommerce-ordering select {
+    padding: 5px;
+}
+
+.product-category-accesorios ul.products li.product a img {
+    width: 50% !important; /* Ajusta el tamaño aquí según lo que necesites */
+    height: auto;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+}
+
