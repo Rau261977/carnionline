@@ -27,9 +27,54 @@ get_header();
 
 
     </section>
+    <section>
+
+        <?php
+        // Incluir el slider destacados
+        get_template_part('template-parts/marquee');
+        ?>
+
+
+    </section>
+    <section>
+
+        <?php
+        // Incluir el slider destacados
+        get_template_part('template-parts/tipoprep');
+        ?>
+
+
+    </section>
+    <section>
+
+        <?php
+        // Incluir el slider destacados
+        get_template_part('template-parts/section-a');
+        ?>
+
+
+    </section>
+    <section>
+
+        <?php
+        // Incluir el slider destacados
+        get_template_part('template-parts/categorias');
+        ?>
+
+
+    </section>
+    <section>
+
+        <?php
+        // Incluir el slider destacados
+        get_template_part('template-parts/destacados');
+        ?>
+
+
+    </section>
 
 </main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

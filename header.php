@@ -60,9 +60,9 @@
 			</div>
 		</div>
 		<header id="masthead" class="site-header">
-			<div class="container pt-1 pb-1">
+			<div class="container">
 				<div class="row align-items-center d-flex justify-content-center">
-					<div class="col-xl-3 col-12 d-flex justify-content-center logo-container-xl pt-1 pb-1">
+					<div class="col-xl-3 col-12 d-flex justify-content-center logo-container-xl">
 						<?php the_custom_logo(); ?>
 					</div>
 					<div class="col-xl-6 col-sm-12 col-md-5 d-flex justify-content-center align-items-center">

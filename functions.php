@@ -178,8 +178,13 @@ add_action('wp_enqueue_scripts', 'carnionline_scripts');
 function enqueue_custom_fonts()
 {
 	if (!is_admin()) {
+		// Registrar y encolar la fuente Urbanist desde Google Fonts
 		wp_register_style('urbanist', 'https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 		wp_enqueue_style('urbanist');
+
+		// Registrar y encolar la fuente de Adobe Typekit
+		wp_register_style('typekit', 'https://use.typekit.net/lyw0tle.css');
+		wp_enqueue_style('typekit');
 	}
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_fonts');

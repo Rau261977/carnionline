@@ -83,20 +83,11 @@ $container-padding-x: 1rem;
 
 
 .site-header {
-    background-color: #fff;
-    border-bottom: 1px solid var(--bs-gray);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agregar sombra */
-
-
-    .aws-search-field {
-        font-size: 0.9rem;
-        padding-left: 1.4rem;
-        border-radius: 20px !important;
-    }
+   background-color: transparent;
 }
 
 .custom-logo {
-    width: 6rem; 
+    width: 4rem; 
 }
 
 @media (max-width: 768px) { 
@@ -421,7 +412,7 @@ $container-padding-x: 1rem;
     background-color: $primary; /* Asegura que el fondo sea el mismo que la clase bg-primary de Bootstrap */
     color: #111; 
     font-weight: 600;
-    padding: 20px 0; /* Espaciado superior e inferior */
+    padding: 10px 0; /* Espaciado superior e inferior */
 }
 
 .site-footer .row {
