@@ -2,7 +2,7 @@
     <hr class="border">
 
     <div class="d-flex justify-content-center align-items-center">
-        <h3 class="card-text-title text-center mt-2 pb-4">MOSTRADOR</h3>
+        <h3 class="card-text-title text-center mt-2 pb-5">MOSTRADOR</h3>
     </div>
     <?php
     // Consulta para obtener los últimos 6 productos de la categoría "carne-vacuna"
@@ -30,6 +30,8 @@
                         <h2><?php the_title(); ?></h2>
                         <?php woocommerce_template_loop_price(); ?>
                     </a>
+                    <?php woocommerce_template_loop_add_to_cart(); ?> <!-- Botón "Agregar al carrito" -->
+
                 </div>
             <?php endwhile; ?>
         </div>
@@ -62,6 +64,7 @@
                         <h2><?php the_title(); ?></h2>
                         <?php woocommerce_template_loop_price(); ?>
                     </a>
+                    <?php woocommerce_template_loop_add_to_cart(); ?> <!-- Botón "Agregar al carrito" -->
                 </div>
             <?php endwhile; ?>
         </div>
@@ -69,7 +72,7 @@
     wp_reset_postdata(); ?>
 
     <?php
-    // Consulta para obtener los últimos 6 productos de la categoría "pollo"
+    // Consulta para obtener los últimos 6 productos de la categoría "pollo" y los últimos 3 de "embutidos"
     $args_pollo = array(
         'post_type' => 'product',
         'posts_per_page' => 3,
@@ -84,7 +87,6 @@
 
     $query_pollo = new WP_Query($args_pollo);
 
-    // Consulta para obtener los últimos 3 productos de la categoría "embutidos"
     $args_embutidos = array(
         'post_type' => 'product',
         'posts_per_page' => 3,
@@ -111,6 +113,7 @@
                         <h2><?php the_title(); ?></h2>
                         <?php woocommerce_template_loop_price(); ?>
                     </a>
+                    <?php woocommerce_template_loop_add_to_cart(); ?> <!-- Botón "Agregar al carrito" -->
                 </div>
             <?php endwhile;
             wp_reset_postdata();
@@ -124,12 +127,14 @@
                         <h2><?php the_title(); ?></h2>
                         <?php woocommerce_template_loop_price(); ?>
                     </a>
+                    <?php woocommerce_template_loop_add_to_cart(); ?> <!-- Botón "Agregar al carrito" -->
                 </div>
             <?php endwhile;
             wp_reset_postdata(); ?>
         </div>
     <?php endif; ?>
 </div>
+
 <style>
     .productos-carne-vacuna,
     .productos-cerdo,
