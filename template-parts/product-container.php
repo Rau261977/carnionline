@@ -1,4 +1,9 @@
-<div class="container">
+<div class="container pt-4">
+    <hr class="border">
+
+    <div class="d-flex justify-content-center align-items-center">
+        <h3 class="card-text-title text-center mt-2 pb-4">MOSTRADOR</h3>
+    </div>
     <?php
     // Consulta para obtener los últimos 6 productos de la categoría "carne-vacuna"
     $args_carne = array(

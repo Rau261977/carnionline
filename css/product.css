@@ -73,15 +73,13 @@
 }
 .onsale {
   position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 6rem !important; /* Ajusta el tamaño según lo que necesites */
-  height: 2rem !important; /* Debe ser igual a width */
+  width: 7rem !important; /* Ajusta el tamaño según lo que necesites */
+  height: 3rem !important; /* Debe ser igual a width */
   padding: 5px !important;
-  background-color: rgb(173, 15, 10) !important;
+  background-color: #ffca00 !important;
   border: 2px solid #000 !important;
-  color: #000 !important;
-  font-size: 1rem !important; /* Ajustar tamaño del texto */
+  color: #fff !important;
+  font-size: 1.2rem !important; /* Ajustar tamaño del texto */
   font-weight: bold !important;
   line-height: 1.2; /* Ajustar la altura de la línea para mejorar el espaciado del texto */
   display: flex;
@@ -94,10 +92,9 @@
 /* Estilos para el elemento .onsale */
 body .product .onsale {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: -5px;
+  left: -5px;
   width: 5rem !important; /* Ajusta el tamaño según lo que necesites */
-  height: 10rem !important; /* Debe ser igual a width */
   display: flex;
   align-items: center;
   justify-content: center;
