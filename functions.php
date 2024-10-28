@@ -151,6 +151,8 @@ function carnionline_scripts()
 {
 	wp_enqueue_style('carnionline-style', get_stylesheet_uri(), array(), _S_VERSION);
 	wp_enqueue_style('carnionline-main', get_template_directory_uri() . '/css/main.css');
+	wp_enqueue_style('product-css', get_template_directory_uri() . '/css/product.css');
+
 
 	wp_style_add_data('carnionline-style', 'rtl', 'replace');
 

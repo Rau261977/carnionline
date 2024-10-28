@@ -40,7 +40,7 @@
         <div class="col-auto">
             <div class="card grow">
                 <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                    <img class="img-fluid" src="http://localhost/carnionline/wp-content/uploads/2024/10/milapapa.png" alt="preelaborados">
+                    <img class="img-fluid" src="http://localhost/carnionline/wp-content/uploads/2024/10/hamb.png" alt="preelaborados">
                     <h6 class="card-text  mt-2">elaborados</h6>
                 </div>
             </div>

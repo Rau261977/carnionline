@@ -15,14 +15,6 @@
             <div class="col-auto">
                 <div class="card grow" style="width: 100px; height: 120px">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/plancha.png" alt="achuras">
-                        <h6 class="card-text text-center mt-2">plancha</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-auto">
-                <div class="card grow" style="width: 100px; height: 120px">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/olla.png" class="card-img-top" alt=" cerdo">
                         <h6 class="card-text text-center mt-2">olla</h6>
                     </div>
@@ -57,6 +49,14 @@
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/wok.png" alt="varios">
                         <h6 class="card-text text-center mt-2">salteados</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="card grow" style="width: 100px; height: 120px">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/milapapa.png" alt="varios">
+                        <h6 class="card-text text-center mt-2">milanesas</h6>
                     </div>
                 </div>
             </div>
