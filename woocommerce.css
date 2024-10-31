@@ -612,3 +612,14 @@ p.no-comments {
 .widget_price_filter .ui-slider-horizontal .ui-slider-range {
 	height: 100%;
 }
+
+/* Estilos para el campo de comentarios */
+.yith_wc_input_text__wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0;
+}
+.yith_wc_input_text__wrapper .yith_wc_input_text__field {
+	padding: 5px;
+	background-color: #f9f9f9;
+}

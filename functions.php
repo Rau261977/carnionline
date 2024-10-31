@@ -228,3 +228,130 @@ if (defined('JETPACK__VERSION')) {
 if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/*
+Notas personalizadas de WooCommerce
+*/
+
+// Mostrar el campo de texto personalizado antes del botón de agregar al carrito
+if (!function_exists('yith_wc_custom_input_text')) {
+	function yith_wc_custom_input_text()
+	{
+		$label = __('Escriba sus indicaciones y preferencias', 'yith-wc-input-text');
+		printf(
+			'<div class="yith_wc_input_text__wrapper">
+                <label for="yith_wc_input_text">%s</label>
+                <input type="text" id="yith_wc_input_text" name="yith_wc_input_text" class="yith_wc_input_text__field" value="">
+            </div>',
+			esc_html($label)
+		);
+	}
+}
+add_action('woocommerce_before_add_to_cart_button', 'yith_wc_custom_input_text');
+
+// Guardar el valor del campo en los datos del carrito
+if (!function_exists('yith_wc_add_cart_item_data')) {
+	function yith_wc_add_cart_item_data($cart_item_data, $product_id, $variation_id, $quantity)
+	{
+		if (!empty($_POST['yith_wc_input_text'])) {
+			$cart_item_data['yith_wc_input_text'] = sanitize_text_field(wp_unslash($_POST['yith_wc_input_text']));
+		}
+		return $cart_item_data;
+	}
+}
+add_filter('woocommerce_add_cart_item_data', 'yith_wc_add_cart_item_data', 10, 4);
+
+// Mostrar la nota en el carrito y en la página de pago
+if (!function_exists('yith_wc_get_item_data')) {
+	function yith_wc_get_item_data($cart_data, $cart_item)
+	{
+		if (!empty($cart_item['yith_wc_input_text'])) {
+			$cart_data[] = array(
+				'name'    => esc_html__('Sus preferencias', 'yith-wc-input-text'), // Nombre unificado
+				'display' => esc_html($cart_item['yith_wc_input_text']), // Mostrar la nota
+			);
+		}
+		return $cart_data;
+	}
+}
+add_filter('woocommerce_get_item_data', 'yith_wc_get_item_data', 25, 2);
+
+// Guardar la misma nota en el pedido
+function guardar_nota_en_orden($item_id, $values)
+{
+	if (!empty($values['yith_wc_input_text'])) {
+		wc_add_order_item_meta($item_id, esc_html__('Sus preferencias', 'yith-wc-input-text'), sanitize_text_field($values['yith_wc_input_text'])); // Etiqueta unificada
+	}
+}
+add_action('woocommerce_add_order_item_meta', 'guardar_nota_en_orden', 10, 2);
+
+// Agregar el valor del campo al pedido
+if (!function_exists('yith_wc_order_line_item')) {
+	function yith_wc_order_line_item($item, $cart_item_key, $values, $order)
+	{
+		if (isset($values['yith_wc_input_text'])) {
+			$item->add_meta_data(esc_html__('Sus preferencias', 'yith-wc-input-text'), sanitize_text_field($values['yith_wc_input_text']), true);
+		}
+	}
+}
+add_action('woocommerce_checkout_create_order_line_item', 'yith_wc_order_line_item', 10, 4);
+
+// Estilos CSS personalizados
+function yith_wc_add_inline_styles()
+{
+	$styles = "
+        .yith_wc_input_text__wrapper {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px;
+        }
+        .yith_wc_input_text__wrapper .yith_wc_input_text__field {
+            max-width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    ";
+	wp_register_style('custom-yith-wc-styles', false);
+	wp_enqueue_style('custom-yith-wc-styles');
+	wp_add_inline_style('custom-yith-wc-styles', $styles);
+}
+add_action('wp_enqueue_scripts', 'yith_wc_add_inline_styles');
+
+// Mostrar textarea en el loop de productos
+function yith_wc_custom_input_text_in_loop()
+{
+	global $product;
+	echo '<div class="yith_wc_input_text__wrapper woocommerce">';
+	echo '<textarea id="yith_wc_input_text_loop" name="yith_wc_input_text" class="yith_wc_input_text__field" placeholder="' . esc_attr__('Escriba sus indicaciones y preferencias', 'yith-wc-input-text') . '" rows="2"></textarea>';
+	echo '<button class="yith_wc_submit_note" data-product-id="' . esc_attr($product->get_id()) . '">Agregar nota</button>';
+	echo '</div>';
+}
+add_action('woocommerce_after_shop_loop_item', 'yith_wc_custom_input_text_in_loop', 10);
+
+// Encolar scripts y configuración de AJAX
+function yith_wc_enqueue_custom_scripts()
+{
+	if (is_shop() || is_product_category() || is_product_tag()) {
+		wp_enqueue_script('yith_wc_custom_script', get_template_directory_uri() . '/js/yith-wc-custom.js', array('jquery'), null, true);
+		wp_localize_script('yith_wc_custom_script', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+	}
+}
+add_action('wp_enqueue_scripts', 'yith_wc_enqueue_custom_scripts');
+
+// Manejo de la solicitud AJAX para agregar una nota
+function handle_add_product_note()
+{
+	if (!isset($_POST['product_id']) || !isset($_POST['note'])) {
+		wp_send_json_error(array('message' => 'Faltan datos.'));
+	}
+
+	$product_id = intval($_POST['product_id']);
+	$note = sanitize_text_field($_POST['note']);
+
+	// Aquí puedes almacenar la nota en la base de datos o procesarla como necesites.
+	// Ejemplo: guardar en user meta o post meta.
+	wp_send_json_success(array('message' => 'Nota agregada.'));
+}
+add_action('wp_ajax_add_product_note', 'handle_add_product_note');
+add_action('wp_ajax_nopriv_add_product_note', 'handle_add_product_note');
