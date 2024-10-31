@@ -204,6 +204,7 @@
 
 
     .card.destacado {
+        background-color: white;
         width: 12rem;
         /* Cambia el ancho de las cards a 12rem */
         display: flex;
