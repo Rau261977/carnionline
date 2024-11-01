@@ -365,3 +365,41 @@ function handle_add_product_note()
 }
 add_action('wp_ajax_add_product_note', 'handle_add_product_note');
 add_action('wp_ajax_nopriv_add_product_note', 'handle_add_product_note');
+
+function custom_quantity_step_and_ajax()
+{
+	if (is_product() || is_shop() || is_product_category() || is_front_page() || is_product_tag() || is_category()) {  // Agregamos is_product_tag y is_category
+?>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				// Configurar los campos de cantidad con incrementos de 0.5
+				document.querySelectorAll('input.qty').forEach(function(field) {
+					field.setAttribute('step', '0.5');
+					field.setAttribute('min', '0.5');
+				});
+			});
+
+			jQuery(document).ready(function($) {
+				// Observa el cambio en el campo de cantidad y actualiza el valor de "Añadir al carrito"
+				$('body').on('change', 'input.qty', function() {
+					var quantityField = $(this);
+					var selectedQuantity = quantityField.val();
+
+					// Actualizar el botón de añadir al carrito con la cantidad seleccionada
+					quantityField.closest('.product').find('.add_to_cart_button').attr('data-quantity', selectedQuantity);
+				});
+
+				// Asegurarse de que se mantiene la cantidad seleccionada al hacer clic en "Añadir al carrito"
+				$('body').on('click', '.add_to_cart_button', function() {
+					var quantityField = $(this).closest('.product').find('input.qty');
+					if (quantityField.length) {
+						var selectedQuantity = quantityField.val() || 1;
+						$(this).attr('data-quantity', selectedQuantity);
+					}
+				});
+			});
+		</script>
+<?php
+	}
+}
+add_action('wp_footer', 'custom_quantity_step_and_ajax');

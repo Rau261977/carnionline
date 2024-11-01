@@ -27,7 +27,6 @@ if (empty($product) || ! $product->is_visible()) {
 ?>
 <li <?php wc_product_class('', $product); ?>>
     <?php
-
     // Hook: woocommerce_before_shop_loop_item.
     do_action('woocommerce_before_shop_loop_item');
 
@@ -39,7 +38,7 @@ if (empty($product) || ! $product->is_visible()) {
     // Título del producto
     do_action('woocommerce_shop_loop_item_title');
 
-    // Etiquetas del producto (aquí es donde las agregamos)
+    // Etiquetas del producto
     echo '<div class="product-tags">';
     echo wc_get_product_tag_list($product->get_id(), ', ', '<span class="tag-list">', '</span>');
     echo '</div>';
@@ -47,9 +46,18 @@ if (empty($product) || ! $product->is_visible()) {
     // Precio y otros detalles debajo del título
     do_action('woocommerce_after_shop_loop_item_title');
 
+    // Contenedor para el botón y la cantidad
+    echo '<div class="add-to-cart-wrapper d-flex align-items-center">';
 
-    // Agregar al carrito y otros elementos
+    // Campo de cantidad
+    echo '<div class="quantity me-2">'; // Agrega un margen derecho para separar del botón
+    echo '<label class="screen-reader-text" for="quantity_' . esc_attr($product->get_id()) . '">Cantidad</label>';
+    echo '<input type="number" id="quantity_' . esc_attr($product->get_id()) . '" class="input-text qty text" name="quantity" value="1" aria-label="Cantidad de productos" size="4" min="1" step="1" placeholder="" inputmode="numeric" autocomplete="off">';
+    echo '</div>';
+
+    // Botón de añadir al carrito
     do_action('woocommerce_after_shop_loop_item');
 
+    echo '</div>'; // Cierra el contenedor
     ?>
 </li>

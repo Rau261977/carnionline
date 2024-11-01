@@ -93,14 +93,14 @@ $container-padding-x: 1rem;
 @media (max-width: 768px) { 
     .custom-logo {
         padding-top: 10px;
-        width: 12rem; 
+        width: 3rem; 
     }
 }
 
 @media (max-width: 576px) { 
     .custom-logo {
         padding-top: 10px;
-        width: 10rem; 
+        width: 3rem; 
     }
 }
 /* Ajustes para pantallas extra grandes (1200px o más) */
@@ -119,6 +119,7 @@ $container-padding-x: 1rem;
 
 .menu-toggle {
     font-size: 1.5rem;
+    margin-top: 15px;
 }
 
 @media (min-width: 768px) {
@@ -935,3 +936,4 @@ body .product-container:hover {
     background-color: #ffca00;
     align-items: baseline;
 }
+

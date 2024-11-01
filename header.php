@@ -33,20 +33,20 @@
 						<ul class="announcement-bar_list">
 							<li>
 								<i class="bi bi-telephone rounded-circle"></i>
-								<a href="tel:+1111111111" class="text-decoration-none">+111111</a>
+								<a href="tel:+1111111111" class="text-decoration-none">123 456 7890</a>
 							</li>
 							<li>
 								<i class="bi bi-envelope rounded-circle"></i>
-								<a href="mailto:hello@peluditos.com" class="text-decoration-none">hello@peluditos.com</a>
+								<a href="mailto:hello@peluditos.com" class="text-decoration-none">hola@carniceria.com</a>
 							</li>
 							<li>
 								<i class="bi bi-truck rounded-circle"></i>envíos a domicilio
 							</li>
 							<li>
-								<i class="bi bi-clock-history rounded-circle"></i>leyenda
+								<i class="bi bi-clock-history rounded-circle"></i>ltodos los medios de pago
 							</li>
 							<li>
-								<i class="bi bi-person rounded-circle"></i>de lunes a viernes
+								<i class="bi bi-person rounded-circle"></i>de lunes a dominf
 							</li>
 						</ul>
 					</div>
@@ -102,7 +102,8 @@
 						</div>
 					</div>
 				</div>
-				<hr style="color: #ffca00;">
+				<hr class="custom-hr" style="color: #000; ">
+
 
 			</div>
 		</header><!-- #masthead -->

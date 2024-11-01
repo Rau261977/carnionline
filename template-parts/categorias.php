@@ -5,7 +5,7 @@
     </div>
     <div class="row gx-4 justify-content-center pt-3 pb-3">
 
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/pollo" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -15,7 +15,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/cerdo" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -25,7 +25,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/vaca" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -35,7 +35,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/mayorista" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -45,7 +45,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/elaborados" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -55,7 +55,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/embutidos" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -65,7 +65,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/varios" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -75,7 +75,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/achuras" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -85,7 +85,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/ofertas" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -95,7 +95,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-auto">
+        <div class="col-auto pt-3">
             <a href="http://localhost/carnionline/categoria-producto/combos" class="text-decoration-none"> <!-- Enlace a la categoría -->
                 <div class="card grow">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">

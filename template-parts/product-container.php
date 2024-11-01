@@ -1,4 +1,4 @@
-<div class="container pt-4">
+<div class="container pt-2">
     <hr class="border">
 
     <div class="d-flex justify-content-center align-items-center">
@@ -6,8 +6,7 @@
     </div>
     <?php echo do_shortcode('[products category="carne-vacuna" limit="5"]'); ?>
     <?php echo do_shortcode('[products category="cerdo" limit="5"]'); ?>
-    <?php echo do_shortcode('[products category="pollo" limit="3"]'); ?>
-    <?php echo do_shortcode('[products category="embutidos" limit="2"]'); ?>
+    <?php echo do_shortcode('[products category="pollo" limit="5"]'); ?>
 
 </div>
 

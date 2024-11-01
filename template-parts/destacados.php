@@ -163,28 +163,6 @@
         /* Ancho total para flexibilidad */
     }
 
-    .destacados::before,
-    .destacados::after {
-        content: "";
-        background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
-        height: 150px;
-        /* Asegúrate de que coincida con la altura de '.destacados' */
-        position: absolute;
-        width: 100px;
-        z-index: 2;
-    }
-
-    .destacados::after {
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-    }
-
-    .destacados::before {
-        left: 0;
-        top: 0;
-    }
-
     .destacado-track {
         display: flex;
         width: calc(12rem * 16 + 10px * 16 * 2);
