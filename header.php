@@ -102,6 +102,8 @@
 						</div>
 					</div>
 				</div>
+				<hr style="color: #ffca00;">
+
 			</div>
 		</header><!-- #masthead -->
 	</div> <!-- Cierre de #page -->

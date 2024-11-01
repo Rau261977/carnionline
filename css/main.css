@@ -12274,7 +12274,7 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .woocommerce .woocommerce-breadcrumb {
   margin: 0 0 1rem;
-  padding: 1rem 0 0 1rem;
+  padding: 0rem 0 0 1rem;
   font-size: large;
   font-weight: 500;
 }
@@ -12323,10 +12323,39 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   padding: 5px;
 }
 
+.woocommerce .woocommerce-ordering {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
 .product-category-accesorios ul.products li.product a img {
   width: 50% !important; /* Ajusta el tamaño aquí según lo que necesites */
   height: auto;
   display: block;
   margin: 0 0 1em;
   box-shadow: none;
+}
+
+.woocommerce-products-header__title.page-title {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+}
+
+.woocommerce-products-header__title.page-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Ajusta esta distancia según la separación que desees */
+  height: 1rem; /* Grosor del subrayado */
+  width: 20%; /* Ancho del subrayado (ajústalo según prefieras) */
+  background-color: #ffca00; /* Color del subrayado */
+}
+
+.menu-item-has-children:hover > .sub-menu {
+  display: block;
+  background-color: #ffca00;
+  align-items: baseline;
 }/*# sourceMappingURL=main.css.map */

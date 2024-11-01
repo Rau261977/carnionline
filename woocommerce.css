@@ -84,7 +84,7 @@ ul.products li.product {
 	padding: 1em;
 	box-sizing: border-box;
 	background-color: white; /* Color de fondo para visualizar la tarjeta */
-	border: 1px solid #ddd;
+	border: 1px solid #999;
 	border-radius: 5px;
 	text-align: center;
 }
@@ -658,4 +658,22 @@ p.no-comments {
 
 .product-tags .tag-list a:hover {
 	background-color: #e3e3e3; /* Fondo en hover */
+}
+.woocommerce-products-header__title.page-title {
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	font-size: 3.5rem;
+	width: fit-content; /* Solo ocupa el ancho del texto */
+	margin: 0 auto; /* Centra el título */
+}
+
+.woocommerce-products-header__title.page-title::after {
+	content: '';
+	position: absolute;
+	bottom: -10px; /* Ajusta esta distancia según la separación que desees */
+
+	height: 0.4rem; /* Grosor del subrayado */
+	background-color: #ffca00; /* Color del subrayado */
 }
