@@ -27,47 +27,29 @@ if (empty($product) || ! $product->is_visible()) {
 ?>
 <li <?php wc_product_class('', $product); ?>>
     <?php
-    /**
-     * Hook: woocommerce_before_shop_loop_item.
-     *
-     * @hooked woocommerce_template_loop_product_link_open - 10
-     */
+
+    // Hook: woocommerce_before_shop_loop_item.
     do_action('woocommerce_before_shop_loop_item');
 
-    /**
-     * Hook: woocommerce_before_shop_loop_item_title.
-     *
-     * @hooked woocommerce_show_product_loop_sale_flash - 10
-     * @hooked woocommerce_template_loop_product_thumbnail - 10
-     */
+    // Envoltorio de imagen
+    echo '<div class="product-image-wrapper">';
     do_action('woocommerce_before_shop_loop_item_title');
+    echo '</div>';
 
-    /**
-     * Hook: woocommerce_shop_loop_item_title.
-     *
-     * @hooked woocommerce_template_loop_product_title - 10
-     */
+    // Título del producto
     do_action('woocommerce_shop_loop_item_title');
 
-    /**
-     * Hook: woocommerce_after_shop_loop_item_title.
-     *
-     * @hooked woocommerce_template_loop_rating - 5
-     * @hooked woocommerce_template_loop_price - 10
-     */
+    // Etiquetas del producto (aquí es donde las agregamos)
+    echo '<div class="product-tags">';
+    echo wc_get_product_tag_list($product->get_id(), ', ', '<span class="tag-list">', '</span>');
+    echo '</div>';
+
+    // Precio y otros detalles debajo del título
     do_action('woocommerce_after_shop_loop_item_title');
 
-    /**
-     * Agregar el campo de texto para comentarios aquí
-     * Usamos un hook para asegurarnos de que se imprima solo una vez
-     */
 
-    /**
-     * Hook: woocommerce_after_shop_loop_item.
-     *
-     * @hooked woocommerce_template_loop_product_link_close - 5
-     * @hooked woocommerce_template_loop_add_to_cart - 10
-     */
+    // Agregar al carrito y otros elementos
     do_action('woocommerce_after_shop_loop_item');
+
     ?>
 </li>

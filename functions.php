@@ -229,11 +229,13 @@ if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
-/*
+/*-------------------------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------------------------
 Notas personalizadas de WooCommerce
 */
 
-// Mostrar el campo de texto personalizado antes del botón de agregar al carrito
+
+// Mostrar el campo de texto personalizado después del precio
 if (!function_exists('yith_wc_custom_input_text')) {
 	function yith_wc_custom_input_text()
 	{
@@ -241,13 +243,20 @@ if (!function_exists('yith_wc_custom_input_text')) {
 		printf(
 			'<div class="yith_wc_input_text__wrapper">
                 <label for="yith_wc_input_text">%s</label>
-                <input type="text" id="yith_wc_input_text" name="yith_wc_input_text" class="yith_wc_input_text__field" value="">
+                <textarea id="yith_wc_input_text" name="yith_wc_input_text" class="yith_wc_input_text__field" rows="2" placeholder="%s"></textarea>
             </div>',
-			esc_html($label)
+			esc_html($label),
+			esc_attr__('Escriba sus indicaciones y preferencias', 'yith-wc-input-text')
 		);
 	}
 }
-add_action('woocommerce_before_add_to_cart_button', 'yith_wc_custom_input_text');
+
+// Usa 'woocommerce_after_single_product_summary' para agregar el textarea después del precio
+add_action('woocommerce_single_product_summary', 'yith_wc_custom_input_text', 20);
+
+
+
+
 
 // Guardar el valor del campo en los datos del carrito
 if (!function_exists('yith_wc_add_cart_item_data')) {
@@ -324,10 +333,11 @@ function yith_wc_custom_input_text_in_loop()
 	global $product;
 	echo '<div class="yith_wc_input_text__wrapper woocommerce">';
 	echo '<textarea id="yith_wc_input_text_loop" name="yith_wc_input_text" class="yith_wc_input_text__field" placeholder="' . esc_attr__('Escriba sus indicaciones y preferencias', 'yith-wc-input-text') . '" rows="2"></textarea>';
-	echo '<button class="yith_wc_submit_note" data-product-id="' . esc_attr($product->get_id()) . '">Agregar nota</button>';
+	//echo '<button class="yith_wc_submit_note" data-product-id="' . esc_attr($product->get_id()) . '">Agregar nota</button>';
 	echo '</div>';
 }
-add_action('woocommerce_after_shop_loop_item', 'yith_wc_custom_input_text_in_loop', 10);
+add_action('woocommerce_after_shop_loop_item_title', 'yith_wc_custom_input_text_in_loop', 15);
+
 
 // Encolar scripts y configuración de AJAX
 function yith_wc_enqueue_custom_scripts()

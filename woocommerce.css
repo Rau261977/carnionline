@@ -613,13 +613,49 @@ p.no-comments {
 	height: 100%;
 }
 
-/* Estilos para el campo de comentarios */
 .yith_wc_input_text__wrapper {
-	display: flex;
-	flex-direction: column;
-	margin: 10px 0;
+	margin-top: -5px; /* Ajusta el margen superior según sea necesario */
 }
-.yith_wc_input_text__wrapper .yith_wc_input_text__field {
-	padding: 5px;
-	background-color: #f9f9f9;
+
+.yith_wc_input_text__field {
+	display: block; /* Asegúrate de que se muestre como un bloque */
+	width: 100%; /* Ajusta el ancho */
+	margin-top: -5px;
+	font-size: smaller;
+}
+.product-image-wrapper {
+	position: relative; /* Para asegurar que la línea esté bien colocada */
+}
+
+.product-image-wrapper::after {
+	content: ''; /* Crear un contenido vacío */
+	display: block; /* Hacer que sea un bloque */
+	position: relative; /* Posicionar el elemento relativamente */
+	width: 140%; /* Ancho extendido */
+	height: 1px; /* Altura de la línea */
+	background-color: #ccc; /* Color de la línea */
+	margin-top: 3px; /* Espacio entre la imagen y la línea */
+	left: -20%; /* Centrado a partir del centro, extendiendo a ambos lados */
+}
+
+.product-tags {
+	margin-top: -1px; /* Espacio entre el título y las etiquetas */
+	margin-bottom: 2px;
+	font-size: 0.9em; /* Tamaño de las etiquetas */
+	color: #2840f5; /* Color de texto */
+	font-style: italic;
+}
+
+.product-tags .tag-list a {
+	display: inline-block;
+	padding: 2px 6px;
+	margin-right: 5px;
+	background-color: #f3f3f3; /* Fondo */
+	color: #2840f5; /* Color de texto */
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.product-tags .tag-list a:hover {
+	background-color: #e3e3e3; /* Fondo en hover */
 }

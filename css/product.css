@@ -37,9 +37,9 @@
 
 /* Precio del producto */
 .product .price {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 /* Diseño de la cuadrícula para contenedor de productos */
@@ -92,8 +92,8 @@
 /* Estilos para el elemento .onsale */
 body .product .onsale {
   position: absolute;
-  top: -5px;
-  left: -5px;
+  top: -20px;
+  left: -40px;
   width: 5rem !important; /* Ajusta el tamaño según lo que necesites */
   display: flex;
   align-items: center;

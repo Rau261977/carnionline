@@ -35,7 +35,7 @@ jQuery(document).ready(function ($) {
 				if (!response.error) {
 					// Actualiza el carrito para reflejar la nota agregada
 					$(document.body).trigger('wc_fragment_refresh');
-					alert('Producto agregado con nota!');
+					//alert('Producto agregado con nota!');
 				} else {
 					alert(response.error);
 				}

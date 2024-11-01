@@ -344,7 +344,7 @@ sup {
 }
 
 a {
-  color: black;
+  color: rgb(21, 5, 101);
   text-decoration: none;
 }
 a:hover {
@@ -11621,8 +11621,8 @@ textarea.form-control-lg {
 
 /* Ajusta el título del producto */
 .product .woocommerce-loop-product__title {
-  font-size: 18px; /* Tamaño de la fuente del título */
-  margin: 10px 0; /* Espacio superior e inferior del título */
+  font-size: 20px; /* Tamaño de la fuente del título */
+  margin: 5px 0; /* Espacio superior e inferior del título */
   color: #333333; /* Color del texto */
 }
 
@@ -12105,13 +12105,13 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 /************************************************************************/
 /* Estilo general para el botón de agregar al carrito */
 .add_to_cart_button {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
+  margin-top: 0rem !important;
+  margin-bottom: 0.6rem !important;
   display: inline-block !important;
   background-color: white !important; /* Color de fondo */
   font-size: 14px !important;
   font-weight: 600 !important;
-  padding: 7px 13px !important; /* Espaciado interno */
+  padding: 5px 8px !important; /* Espaciado interno */
   border: 2px solid #ffca00 !important; /* Borde de 1px con color */
   border-radius: 50px !important; /* Bordes redondeados */
   cursor: pointer !important;
