@@ -35,7 +35,7 @@
     .marquee__content {
         display: flex;
         list-style: none;
-        animation: scrolling 45s linear infinite;
+        animation: scrolling 20s linear infinite;
     }
 
     .marquee__item {

@@ -26,8 +26,22 @@
         font-size: 3rem;
         letter-spacing: 1px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
 
+    @media (max-width: 768px) {
+        .custom-text {
+            font-size: 2rem;
+            /* Tamaño reducido para pantallas pequeñas */
+        }
+    }
 
+    /* Estilos para pantallas muy pequeñas (por ejemplo, móviles) */
+    @media (max-width: 480px) {
+        .custom-text {
+            font-size: 1.5rem;
+            padding-top: 20px;
+            /* Tamaño aún más reducido para pantallas muy pequeñas */
+        }
     }
 
     .card-img-gus {

@@ -43,7 +43,7 @@
 								<i class="bi bi-truck rounded-circle"></i>envíos a domicilio
 							</li>
 							<li>
-								<i class="bi bi-clock-history rounded-circle"></i>ltodos los medios de pago
+								<i class="bi bi-clock-history rounded-circle"></i>Todos los medios de pago
 							</li>
 							<li>
 								<i class="bi bi-person rounded-circle"></i>de lunes a dominf

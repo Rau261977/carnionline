@@ -105,6 +105,22 @@
         font-size: 2.2rem;
     }
 
+    /* Estilos para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .card-text-title {
+            font-size: 1.6rem;
+            /* Tamaño reducido para pantallas pequeñas */
+        }
+    }
+
+    /* Estilos para pantallas muy pequeñas (por ejemplo, móviles) */
+    @media (max-width: 480px) {
+        .card-text-title {
+            font-size: 1.4rem;
+            /* Tamaño aún más reducido para pantallas muy pequeñas */
+        }
+    }
+
     .card-text-title::after {
         content: "";
         position: absolute;

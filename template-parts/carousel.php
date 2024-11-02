@@ -24,7 +24,7 @@
         <div class="carousel-item" data-bs-interval="3000">
             <img src="<?php echo get_template_directory_uri(); ?>/img/carousel/polloasado.jpeg" loading="lazy" class="d-block w-100" alt="imagen promocional del slider">
             <div class="carousel-card">
-                <h2 style="margin-left: 18px;">POLLOS Y <br> ANIMALES DE CORRAL</h2>
+                <h2 style="margin-left: 18px;">POLLOS, HUEVOS <br>Y PRODUCTOS<br> DE GRANJA</h2>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="3000">
