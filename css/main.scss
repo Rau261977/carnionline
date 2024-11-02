@@ -937,3 +937,7 @@ body .product-container:hover {
     align-items: baseline;
 }
 
+/* Oculta el <hr> solo en la página de inicio */
+.home .custom-hr {
+    display: none; /* Esto oculta el <hr> en la página de inicio */
+}
