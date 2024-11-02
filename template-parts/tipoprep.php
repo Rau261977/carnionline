@@ -5,7 +5,7 @@
     <div class="container-fluid py-2 pt-4">
         <div class="row gx-4 justify-content-center">
             <div class="col-auto pt-3">
-                <a href="http://localhost/carnionline/etiqueta-producto/parrilla" class="text-decoration-none"> <!-- Enlace a la etiqueta "parrilla" -->
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/parrilla')); ?>" class="text-decoration-none">
                     <div class="card grow" style="width: 100px; height: 120px">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/fuego.png" class="card-img-top" alt="parrilla">
@@ -16,7 +16,7 @@
             </div>
 
             <div class="col-auto pt-3">
-                <a href="http://localhost/carnionline/etiqueta-producto/olla" class="text-decoration-none"> <!-- Enlace a la etiqueta "parrilla" -->
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/olla')); ?>" class="text-decoration-none">
                     <div class="card grow" style="width: 100px; height: 120px">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/olla.png" class="card-img-top" alt="parrilla">
@@ -26,7 +26,7 @@
                 </a>
             </div>
             <div class="col-auto pt-3">
-                <a href="http://localhost/carnionline/etiqueta-producto/pucheros" class="text-decoration-none"> <!-- Enlace a la etiqueta "parrilla" -->
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/pucheros')); ?>" class="text-decoration-none">
                     <div class="card grow" style="width: 100px; height: 120px">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/ollapuch.png" class="card-img-top" alt="parrilla">
@@ -36,7 +36,7 @@
                 </a>
             </div>
             <div class="col-auto pt-3">
-                <a href="http://localhost/carnionline/etiqueta-producto/plancha" class="text-decoration-none"> <!-- Enlace a la etiqueta "parrilla" -->
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/plancha')); ?>" class="text-decoration-none">
                     <div class="card grow" style="width: 100px; height: 120px">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/sarten.png" class="card-img-top" alt="parrilla">
@@ -46,7 +46,7 @@
                 </a>
             </div>
             <div class="col-auto pt-3">
-                <a href="http://localhost/carnionline/etiqueta-producto/horno" class="text-decoration-none"> <!-- Enlace a la etiqueta "parrilla" -->
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/horno')); ?>" class="text-decoration-none">
                     <div class="card grow" style="width: 100px; height: 120px">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/horno.png" class="card-img-top" alt="parrilla">
@@ -56,7 +56,7 @@
                 </a>
             </div>
             <div class="col-auto pt-3">
-                <a href="http://localhost/carnionline/etiqueta-producto/salteados" class="text-decoration-none"> <!-- Enlace a la etiqueta "parrilla" -->
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/salteados')); ?>" class="text-decoration-none">
                     <div class="card grow" style="width: 100px; height: 120px">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/wok.png" class="card-img-top" alt="parrilla">
@@ -66,7 +66,7 @@
                 </a>
             </div>
             <div class="col-auto pt-3">
-                <a href="http://localhost/carnionline/etiqueta-producto/milanesas" class="text-decoration-none"> <!-- Enlace a la etiqueta "parrilla" -->
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/milanesas')); ?>" class="text-decoration-none">
                     <div class="card grow" style="width: 100px; height: 120px">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/milapapa.png" class="card-img-top" alt="parrilla">

@@ -3,155 +3,99 @@
         <h3 class="card-text-title text-center">PROMOCIONES DE LA SEMANA</h3>
     </div>
     <div class="destacado-track pt-4">
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/pechugas.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">SUPREMAS</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;5 kg 10000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/chorizos.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">CHORIZOS x gancho</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;$ 5000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/pechito.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">PECHITO de cerdo</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp; 3 kg $ 5000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/entranas.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">ENTRAÑAS</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;2 kg $ 5000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/huevos.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">HUEVOS</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;maple $ 6000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/vacio.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">VACIO ENTERO</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;$ 5000 x kg&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/pollo.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">POLLOS</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;5 kg $ 70000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/bondiola.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">BONDIOLA</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;3 kg $ 6000&nbsp;</p>
-            </div>
-        </div>
-        <!-- Duplicamos los elementos para un efecto de bucle continuo -->
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/pechugas.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">SUPREMAS</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;5 kg 10000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/chorizos.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">CHORIZOS x gancho</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;$ 5000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/pechito.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">PECHITO de cerdo</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp; 3 kg $ 5000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/entranas.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">ENTRAÑAS</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;2 kg $ 5000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/huevos.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">HUEVOS</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;maple $ 6000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/vacio.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">VACIO ENTERO</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;$ 5000 x kg&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/pollo.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">POLLOS</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;5 kg $ 70000&nbsp;</p>
-            </div>
-        </div>
-        <div class="card destacado">
-            <img src="http://localhost/carnionline/wp-content/uploads/2024/10/bondiola.png" alt="Pechugas" />
-            <div class="card-body text-center">
-                <h5 class="card-title">BONDIOLA</h5>
-            </div>
-            <div class="card-price text-center">
-                <p>&nbsp;3 kg $ 6000&nbsp;</p>
-            </div>
-        </div>
+        <?php
+        // Definir los productos en un array
+        $productos = [
+            [
+                'titulo' => 'SUPREMAS',
+                'precio' => '10,000',
+                'peso' => '5 kg',
+                'imagen' => 'pechugas.png',
+            ],
+            [
+                'titulo' => 'CHORIZOS x gancho',
+                'precio' => '5,000',
+                'peso' => '',
+                'imagen' => 'chorizos.png',
+            ],
+            [
+                'titulo' => 'PECHITO de cerdo',
+                'precio' => '5,000',
+                'peso' => '3 kg',
+                'imagen' => 'pechito.png',
+            ],
+            [
+                'titulo' => 'ENTRAÑAS',
+                'precio' => '5,000',
+                'peso' => '2 kg',
+                'imagen' => 'entranas.png',
+            ],
+            [
+                'titulo' => 'HUEVOS',
+                'precio' => '6,000',
+                'peso' => 'maple',
+                'imagen' => 'huevos.png',
+            ],
+            [
+                'titulo' => 'VACIO ENTERO',
+                'precio' => '5,000 x kg',
+                'peso' => '',
+                'imagen' => 'vacio.png',
+            ],
+            [
+                'titulo' => 'POLLOS',
+                'precio' => '70,000',
+                'peso' => '5 kg',
+                'imagen' => 'pollo.png',
+            ],
+            [
+                'titulo' => 'BONDIOLA',
+                'precio' => '6,000',
+                'peso' => '3 kg',
+                'imagen' => 'bondiola.png',
+            ],
+        ];
+
+        // Obtener el directorio de carga
+        $upload_dir = wp_upload_dir();
+
+        // Obtener el enlace a la categoría "ofertas"
+        $ofertas_link = esc_url(get_term_link('ofertas', 'product_cat'));
+
+        // Generar las tarjetas de producto
+        foreach ($productos as $producto) {
+            $image_url = $upload_dir['baseurl'] . '/2024/10/' . $producto['imagen'];
+        ?>
+            <a href="<?php echo $ofertas_link; ?>" class="card destacado">
+                <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="<?php echo esc_attr($producto['titulo']); ?>">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><?php echo esc_html($producto['titulo']); ?></h5>
+                </div>
+                <div class="card-price text-center">
+                    <p><?php echo esc_html($producto['peso'] . ' ' . $producto['precio']); ?></p>
+                </div>
+            </a>
+        <?php
+        }
+
+        // Duplicar los elementos para un efecto de bucle continuo
+        foreach ($productos as $producto) {
+            $image_url = $upload_dir['baseurl'] . '/2024/10/' . $producto['imagen'];
+        ?>
+            <a href="<?php echo $ofertas_link; ?>" class="card destacado">
+                <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="<?php echo esc_attr($producto['titulo']); ?>">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><?php echo esc_html($producto['titulo']); ?></h5>
+                </div>
+                <div class="card-price text-center">
+                    <p><?php echo esc_html($producto['peso'] . ' ' . $producto['precio']); ?></p>
+                </div>
+            </a>
+        <?php
+        }
+        ?>
     </div>
 </section>
-
-
 
 <style>
     .destacados {
@@ -255,8 +199,6 @@
         /* Cambia el color */
         font-weight: bold;
         /* Ajusta el grosor de la fuente */
-        margin-top: 10px;
-        /* Agrega margen si es necesario */
         text-transform: uppercase;
         /* Cambia el texto a mayúsculas */
         letter-spacing: 1px;
@@ -278,6 +220,6 @@
         /* Ajusta el espacio entre letras */
         background-color: rgba(173, 15, 10);
         border-radius: 5px;
-        padding-bottom: 2px;
+        padding: 2px 7px;
     }
 </style>

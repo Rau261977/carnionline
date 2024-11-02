@@ -165,6 +165,9 @@ function carnionline_scripts()
 
 	wp_enqueue_script('bootstrap-script', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js', array('jquery', 'bootstrap-popper'), '5.3.3', true);
 
+	wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css', array(), '1.11.3');
+
+
 	wp_enqueue_script('peluditos-script', get_template_directory_uri() . '/js/script.js', array('jquery'), true);
 
 
