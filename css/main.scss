@@ -941,3 +941,11 @@ body .product-container:hover {
 .home .custom-hr {
     display: none; /* Esto oculta el <hr> en la página de inicio */
 }
+.scroll-image {
+    width: 6rem;
+    position: fixed; /* Mantenerla en la misma posición mientras se hace scroll */
+    top: 30px; /* Ajusta según sea necesario */
+    left: 30px; /* Ajusta según sea necesario */
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+    display: none; /* Ocultamos la imagen por defecto */
+}

@@ -46,7 +46,7 @@
 								<i class="bi bi-clock-history rounded-circle"></i>Todos los medios de pago
 							</li>
 							<li>
-								<i class="bi bi-person rounded-circle"></i>de lunes a dominf
+								<i class="bi bi-person rounded-circle"></i>de lunes a domingo
 							</li>
 						</ul>
 					</div>
@@ -90,7 +90,7 @@
 							</div>
 						</nav>
 					</div>
-					<div class="col-xl-3 d-flex flex-column pt-2">
+					<div class="col-xl-3 d-flex flex-column pt-2 justify-content-end align-items-end">
 						<div class="menu-secundario-container d-none d-md-block">
 							<?php
 							wp_nav_menu(array(

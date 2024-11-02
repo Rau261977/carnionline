@@ -159,7 +159,6 @@ function carnionline_scripts()
 	wp_enqueue_script('carnionline-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
 	// Encolar scripts
-	wp_enqueue_script('peluditos-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), true);
 
 	wp_enqueue_script('bootstrap-popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js', array('jquery'), '2.11.8', true);
 
