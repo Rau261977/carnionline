@@ -1,8 +1,8 @@
 <div class="container py-3 justify-content-center">
     <div class="d-flex justify-content-center align-items-center">
-        <h3 class="card-text-title text-center mt-2">BÚSQUEDA POR TIPO DE PREPARACIÓN</h3>
+        <h3 class="card-text-title text-center">BÚSQUEDA POR TIPO DE PREPARACIÓN</h3>
     </div>
-    <div class="container-fluid py-2 pt-4">
+    <div class="container-fluid py-2 pt-2">
         <div class="row gx-4 justify-content-center">
             <div class="col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/parrilla')); ?>" class="text-decoration-none">

@@ -167,7 +167,7 @@ function carnionline_scripts()
 	wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css', array(), '1.11.3');
 
 
-	wp_enqueue_script('peluditos-script', get_template_directory_uri() . '/js/script.js', array('jquery'), true);
+	wp_enqueue_script('carnionline-script', get_template_directory_uri() . '/js/script.js', array('jquery'), true);
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -257,9 +257,6 @@ if (!function_exists('yith_wc_custom_input_text')) {
 add_action('woocommerce_single_product_summary', 'yith_wc_custom_input_text', 20);
 
 
-
-
-
 // Guardar el valor del campo en los datos del carrito
 if (!function_exists('yith_wc_add_cart_item_data')) {
 	function yith_wc_add_cart_item_data($cart_item_data, $product_id, $variation_id, $quantity)
@@ -340,16 +337,20 @@ function yith_wc_custom_input_text_in_loop()
 }
 add_action('woocommerce_after_shop_loop_item_title', 'yith_wc_custom_input_text_in_loop', 15);
 
-
-// Encolar scripts y configuración de AJAX
+// Encolar scripts y configuración de AJAX para enviar la nota con AJAX
 function yith_wc_enqueue_custom_scripts()
 {
-	if (is_shop() || is_product_category() || is_product_tag()) {
+	if (is_front_page() || is_shop() || is_product_category() || is_product_tag()) {
 		wp_enqueue_script('yith_wc_custom_script', get_template_directory_uri() . '/js/yith-wc-custom.js', array('jquery'), null, true);
-		wp_localize_script('yith_wc_custom_script', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+		wp_localize_script('yith_wc_custom_script', 'ajax_object', array(
+			'ajax_url' => admin_url('admin-ajax.php'),
+		));
 	}
 }
 add_action('wp_enqueue_scripts', 'yith_wc_enqueue_custom_scripts');
+
+
+
 
 // Manejo de la solicitud AJAX para agregar una nota
 function handle_add_product_note()
@@ -367,6 +368,36 @@ function handle_add_product_note()
 }
 add_action('wp_ajax_add_product_note', 'handle_add_product_note');
 add_action('wp_ajax_nopriv_add_product_note', 'handle_add_product_note');
+
+
+// Agregar el campo de nota al formulario de agregar al carrito
+function agregar_campo_personalizado_carrito()
+{
+	echo '<div class="yith_wc_input_text__wrapper">';
+	echo '<label for="yith_wc_input_text">' . __('Escriba sus indicaciones y preferencias', 'yith-wc-input-text') . '</label>';
+	echo '<textarea id="yith_wc_input_text" name="yith_wc_input_text" class="yith_wc_input_text__field" rows="2" placeholder="' . esc_attr__('Escriba sus indicaciones y preferencias', 'yith-wc-input-text') . '"></textarea>';
+	echo '</div>';
+}
+add_action('woocommerce_before_add_to_cart_button', 'agregar_campo_personalizado_carrito');
+
+// Guardar el valor del campo de texto en los datos del carrito
+function guardar_campo_personalizado_en_carrito($cart_item_data, $product_id, $variation_id, $quantity)
+{
+	if (!empty($_POST['yith_wc_input_text'])) {
+		$cart_item_data['yith_wc_input_text'] = sanitize_text_field(wp_unslash($_POST['yith_wc_input_text']));
+		WC()->session->set('yith_wc_input_text', $cart_item_data['yith_wc_input_text']); // Guardar en la sesión
+	}
+	return $cart_item_data;
+}
+add_filter('woocommerce_add_cart_item_data', 'guardar_campo_personalizado_en_carrito', 10, 4);
+
+
+
+
+
+
+
+//función para sumar de a 0.5--------------------
 
 function custom_quantity_step_and_ajax()
 {
