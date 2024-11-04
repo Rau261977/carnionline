@@ -27,6 +27,9 @@
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'peluditos'); ?></a>
 
 		<div class="announcement-bar pt-1 pb-1 d-none d-lg-block">
+			<div class="scroll-image" style="display: none;">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/mariopng.png" alt="Imagen al hacer scroll" />
+			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">

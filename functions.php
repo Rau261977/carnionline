@@ -253,6 +253,7 @@ if (!function_exists('yith_wc_custom_input_text')) {
 	}
 }
 
+
 // Usa 'woocommerce_after_single_product_summary' para agregar el textarea después del precio
 add_action('woocommerce_single_product_summary', 'yith_wc_custom_input_text', 20);
 
@@ -374,7 +375,6 @@ add_action('wp_ajax_nopriv_add_product_note', 'handle_add_product_note');
 function agregar_campo_personalizado_carrito()
 {
 	echo '<div class="yith_wc_input_text__wrapper">';
-	echo '<label for="yith_wc_input_text">' . __('Escriba sus indicaciones y preferencias', 'yith-wc-input-text') . '</label>';
 	echo '<textarea id="yith_wc_input_text" name="yith_wc_input_text" class="yith_wc_input_text__field" rows="2" placeholder="' . esc_attr__('Escriba sus indicaciones y preferencias', 'yith-wc-input-text') . '"></textarea>';
 	echo '</div>';
 }

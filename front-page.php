@@ -17,9 +17,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-    <div class="scroll-image" style="display: none;">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/mariopng.png" alt="Imagen al hacer scroll" />
-    </div>
+
 
     <section>
 
