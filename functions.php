@@ -438,27 +438,18 @@ function custom_quantity_step_and_ajax()
 add_action('wp_footer', 'custom_quantity_step_and_ajax');
 
 
-
 add_filter('woocommerce_get_price_html', 'agregar_unidad_precio', 10, 2);
 function agregar_unidad_precio($precio_html, $producto)
 {
-	// ID del producto específico
-	$producto_especifico = 254; // ID del producto
-	if ($producto->get_id() === $producto_especifico) {
-		$precio_html .= ' x 30u.'; // Texto para el producto específico
+	$productos_especificos = array(253, 314); // IDs de productos específicos
+
+	if (in_array($producto->get_id(), $productos_especificos)) {
+		// Para los productos específicos: muestra precio sin moneda y con "x 30u."
+		$precio_html = wc_price($producto->get_price()) . ' x 30u.';
 	} else {
-		$precio_html .= ' x kg'; // Texto para otros productos
+		// Para otros productos: muestra precio con "x kg"
+		$precio_html = wc_price($producto->get_price()) . ' x kg';
 	}
-	return $precio_html;
-}
 
-add_filter('woocommerce_get_price_html', 'agregar_unidad_precio', 10, 2);
-function agregar_unidad_precio($precio_html, $producto)
-{
-	// ID del producto específico
-	$producto_especifico = 254; // ID del producto
-	if ($producto->get_id() == $producto_especifico) {
-		return str_replace('</span>', ' x 30</span>', $precio_html); // Añadir 'x 30' antes de cerrar el span
-	}
-	return $precio_html . ' x kg'; // Texto para otros productos
+	return $precio_html;
 }
