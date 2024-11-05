@@ -1039,3 +1039,25 @@ body .product-container:hover {
   .site-info {
     margin: 0 auto;
   }
+
+
+  .aws_get_search_form {
+    border-radius: 8px;
+    padding-top: 5px;
+  }
+
+  .aws-container .aws-search-form *, .aws-search-result {
+    border-radius: 8px !important;
+  }
+  
+  .aws-container .aws-search-form {
+    font-size: 15px !important;
+  }
+  .aws-container .aws-search-form .aws-wrapper {
+    flex-grow: 1;
+    position: relative;
+    vertical-align: top;
+    padding-top: 5px;
+    width: 100%;
+    overflow: hidden;
+}

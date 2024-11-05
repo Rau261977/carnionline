@@ -26,7 +26,7 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'peluditos'); ?></a>
 
-		<div class="announcement-bar pt-1 pb-1 d-none d-lg-block">
+		<div class="announcement-bar d-none d-lg-block">
 			<div class="scroll-image" style="display: none;">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/mariopng.png" alt="Imagen al hacer scroll" />
 			</div>
@@ -42,14 +42,14 @@
 								<i class="bi bi-envelope rounded-circle"></i>
 								<a href="mailto:hello@peluditos.com" class="text-decoration-none">hola@carniceria.com</a>
 							</li>
-							<li>
-								<i class="bi bi-truck rounded-circle"></i>envíos a domicilio
-							</li>
-							<li>
-								<i class="bi bi-clock-history rounded-circle"></i>Todos los medios de pago
-							</li>
+
 							<li>
 								<i class="bi bi-person rounded-circle"></i>de lunes a domingo
+							</li>
+							<li>
+								<?php if (function_exists('aws_get_search_form')) {
+									aws_get_search_form();
+								} ?>
 							</li>
 						</ul>
 					</div>

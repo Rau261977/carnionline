@@ -3,13 +3,13 @@
         <ul class="marquee__content">
             <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Probaste los nuevos chorizos? de cerdo ahumado y especiales de rockefort, exquisitos! no te los pierdas.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; </li>
             <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Envíos a domicilio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; </li>
-            <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos los medio de pago&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; </li>
+            <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos los medios de pago&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; </li>
             <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grandes ofertas todas las semanas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;</li>
 
             <!--  Repeated marquee items -->
             <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Probaste los nuevos chorizos? de cerdo ahumado y especiales de rockefort, exquisitos! no te los pierdas.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; </li>
             <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Envíos a domicilio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; </li>
-            <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos los medio de pago&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; </li>
+            <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos los medios de pago&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; </li>
             <li class="marquee__item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grandes ofertas todas las semanas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull;</li>
         </ul>
     </div>
