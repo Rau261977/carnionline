@@ -11862,7 +11862,7 @@ textarea.form-control-lg {
 }
 
 .site-footer a:hover {
-  color: #ffc107; /* Cambia el color al pasar el mouse por el enlace (opcional) */
+  color: #2469e0; /* Cambia el color al pasar el mouse por el enlace (opcional) */
 }
 
 .site-footer img {
@@ -12376,4 +12376,76 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   line-height: 1.375;
   margin-top: 8px;
   display: none;
+}
+
+.woofc-menu-item .woofc-menu-item-inner {
+  position: fixed; /* Fijar la posición */
+  top: 1.7rem; /* Distancia desde el fondo de la ventana */
+  right: 2rem; /* Distancia desde la derecha de la ventana */
+  z-index: 2000; /* Asegúrate de que esté por encima de otros elementos */
+  color: rgb(0, 0, 0); /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5%; /* Bordes redondeados */
+  width: 10rem; /* Ancho del botón */
+  height: auto; /* Altura del botón */
+  display: flex; /* Para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de profundidad */
+  transition: background-color 0.3s; /* Transición para el hover */
+}
+
+.woofc-menu-item .woofc-menu-item-inner {
+  background-color: rgba(224, 183, 0, 0.5215686275); /* Color de fondo al pasar el mouse */
+}
+
+.woofc-area.woofc-style-01 .woofc-area-bot .woofc-link span {
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: #000000;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.woofc-area * {
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #222;
+}
+
+.woofc-area.woofc-style-01 .woofc-area-bot .woofc-action .woofc-action-inner > div a {
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #444;
+  font-weight: 700;
+  border: 2px solid #FFCA02;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  transition: all 0.5s;
+}
+
+.woofc-area.woofc-style-01 .woofc-area-bot .woofc-action .woofc-action-inner > div a:hover {
+  background-color: #FFCA02; /* Color de fondo al pasar el mouse */
+  color: #323232; /* Color del texto al pasar el mouse */
+  border-color: #FFCA02; /* Color del borde al pasar el mouse */
+}
+
+#colophon {
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.site-info {
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

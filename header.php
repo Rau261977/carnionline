@@ -53,12 +53,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-4">
-						<a href="./mi-cuenta" class="nav-link p-0 d-flex justify-content-end align-items-center">
-							<i class="bi bi-person rounded-circle fs-5"></i>
-							<span class="icon-text">Mi cuenta</span>
-						</a>
-					</div>
+
 				</div>
 			</div>
 		</div>

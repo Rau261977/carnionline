@@ -17,7 +17,7 @@
 
 		<?php
 		/* translators: 1: Theme name, 2: Theme author. */
-		printf(esc_html__('Theme: %1$s by %2$s.', 'carnionline'), 'carnionline', '<a href="http://creatix.click">CREATIX.CLICK</a>');
+		printf(esc_html__('Desarrollado y diseñado por: %s - 2024', 'carnionline'), '<a href="http://creatix.click">CREATIX.CLICK</a>');
 		?>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
