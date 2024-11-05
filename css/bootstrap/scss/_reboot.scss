@@ -408,7 +408,7 @@ button,
 select,
 optgroup,
 textarea {
-  width: 45px;
+  //width: 45px;
   margin: 0; // 1
   font-family: inherit;
   @include font-size(inherit);

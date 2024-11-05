@@ -26,7 +26,7 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'peluditos'); ?></a>
 
-		<div class="announcement-bar d-none d-lg-block">
+		<div class="announcement-bar d-none d-lg-block fixed-top">
 			<div class="scroll-image" style="display: none;">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/mariopng.png" alt="Imagen al hacer scroll" />
 			</div>
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 		</div>
-		<header id="masthead" class="site-header">
+		<header id="masthead">
 			<div class="container">
 				<div class="row align-items-center d-flex justify-content-center">
 					<div class="col-xl-3 col-12 d-flex justify-content-center logo-container-xl">

@@ -39,6 +39,9 @@ $container-padding-x: 1rem;
 // Then add additional custom code here
 
 /************* HEADER ***********************/
+#masthead {
+    padding-top: 40px;
+}
 
 @media (min-width: 992px) {
     .container-lg, .container-md, .container-sm, .container {
@@ -964,19 +967,16 @@ body .product-container:hover {
     right: 2rem; /* Distancia desde la derecha de la ventana */
     z-index: 2000; /* Asegúrate de que esté por encima de otros elementos */
     color: rgb(0, 0, 0); /* Color del texto */
-    border: none; /* Sin borde */
+    border: 1px solid #151515;
     border-radius: 5%; /* Bordes redondeados */
     width: 10rem; /* Ancho del botón */
     height: auto; /* Altura del botón */
     display: flex; /* Para centrar el contenido */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para darle un efecto de profundidad */
     transition: background-color 0.3s; /* Transición para el hover */
-}
-
-.woofc-menu-item .woofc-menu-item-inner {
-    background-color: #e0b70085; /* Color de fondo al pasar el mouse */
+    background-color: #ffca00;
 }
 
 .woofc-area.woofc-style-01 .woofc-area-bot .woofc-link span {
@@ -1048,6 +1048,7 @@ body .product-container:hover {
 
   .aws-container .aws-search-form *, .aws-search-result {
     border-radius: 8px !important;
+    color: #0056b3;
   }
   
   .aws-container .aws-search-form {
@@ -1060,4 +1061,26 @@ body .product-container:hover {
     padding-top: 5px;
     width: 100%;
     overflow: hidden;
+}
+.aws-container .aws-search-field {
+	width: 100%;
+	max-width: 100%;
+	color: #1f0ad9;
+	padding: 6px;
+	line-height: 30px;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	z-index: 2;
+	-webkit-appearance: none;
+	height: 100%;
+	min-height: inherit;
+	margin: 0 !important;
+	border: 1px solid #d8d8d8;
+	outline: 0;
+}
+
+.aws-container .aws-search-form .aws-form-btn {
+    margin: 5px !important;
 }

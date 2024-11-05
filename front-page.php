@@ -82,6 +82,15 @@ get_header();
 
 
     </section>
+    <section>
+
+        <?php
+        // Incluir el slider destacados
+        get_template_part('template-parts/fotos');
+        ?>
+
+
+    </section>
 
 </main><!-- #main -->
 
