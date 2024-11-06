@@ -452,6 +452,7 @@ button,
 select,
 optgroup,
 textarea {
+  width: 45px;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -12494,4 +12495,12 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .aws-container .aws-search-form .aws-form-btn {
   margin: 5px !important;
+}
+
+.input-text .qty text {
+  width: 45px;
+}
+
+input#quantity.input-text.qty.text {
+  width: 45px; /* Ajusta el ancho según tus necesidades */
 }/*# sourceMappingURL=main.css.map */

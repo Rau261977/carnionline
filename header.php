@@ -24,14 +24,15 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'peluditos'); ?></a>
 
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'peluditos'); ?></a>
 		<div class="announcement-bar d-none d-lg-block fixed-top">
 			<div class="scroll-image" style="display: none;">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/mariopng.png" alt="Imagen al hacer scroll" />
 			</div>
 			<div class="container">
 				<div class="row">
+
 					<div class="col-md-8">
 						<ul class="announcement-bar_list">
 							<li>
@@ -56,9 +57,11 @@
 
 				</div>
 			</div>
+
 		</div>
 		<header id="masthead">
 			<div class="container">
+
 				<div class="row align-items-center d-flex justify-content-center">
 					<div class="col-xl-3 col-12 d-flex justify-content-center logo-container-xl">
 						<?php the_custom_logo(); ?>
@@ -89,7 +92,7 @@
 						</nav>
 					</div>
 					<div class="col-xl-3 d-flex flex-column pt-2 justify-content-end align-items-end">
-						<div class="menu-secundario-container d-none d-md-block">
+						<div class="menu-secundario-container d-none d-md-block pt-2">
 							<?php
 							wp_nav_menu(array(
 								'theme_location' => 'menu_secundario',

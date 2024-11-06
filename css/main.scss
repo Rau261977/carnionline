@@ -122,7 +122,6 @@ $container-padding-x: 1rem;
 }
 
 .menu-toggle {
-    font-size: 1.5rem;
     margin-top: 15px;
 }
 
@@ -256,7 +255,7 @@ $container-padding-x: 1rem;
 
 #woofc-count {
     margin: 26px;
-    display: none; /* Oculta el icono inicialmente */
+    /*display: none;  Oculta el icono inicialmente */
     position: fixed; /* Para que el icono se mantenga visible al hacer scroll */
     top: 20px; /* Ajusta la posición vertical del icono */
     right: 20px; /* Ajusta la posición horizontal del icono */
@@ -1084,3 +1083,4 @@ body .product-container:hover {
 .aws-container .aws-search-form .aws-form-btn {
     margin: 5px !important;
 }
+

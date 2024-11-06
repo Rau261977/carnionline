@@ -759,6 +759,47 @@ textarea {
 .entry-summary {
 	margin: 1.5em 15rem;
 }
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 15rem;
+}
+
+/* Ajuste para pantallas grandes */
+@media (max-width: 1200px) {
+	.page-content,
+	.entry-content,
+	.entry-summary {
+		margin: 1em 10rem;
+	}
+}
+
+/* Ajuste para pantallas medianas */
+@media (max-width: 992px) {
+	.page-content,
+	.entry-content,
+	.entry-summary {
+		margin: 1em 5rem;
+	}
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+	.page-content,
+	.entry-content,
+	.entry-summary {
+		margin: 1em 2rem;
+	}
+}
+
+/* Ajuste para pantallas extra pequeñas */
+@media (max-width: 576px) {
+	.page-content,
+	.entry-content,
+	.entry-summary {
+		margin: 0.5em 1rem;
+	}
+}
 
 .page-links {
 	clear: both;
