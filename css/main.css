@@ -452,7 +452,6 @@ button,
 select,
 optgroup,
 textarea {
-  width: 45px;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -11575,7 +11574,6 @@ textarea.form-control-lg {
   }
 }
 .menu-toggle {
-  font-size: 1.5rem;
   margin-top: 15px;
 }
 
@@ -11694,7 +11692,7 @@ textarea.form-control-lg {
 
 #woofc-count {
   margin: 26px;
-  display: none; /* Oculta el icono inicialmente */
+  /*display: none;  Oculta el icono inicialmente */
   position: fixed; /* Para que el icono se mantenga visible al hacer scroll */
   top: 20px; /* Ajusta la posición vertical del icono */
   right: 20px; /* Ajusta la posición horizontal del icono */
@@ -12495,12 +12493,4 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .aws-container .aws-search-form .aws-form-btn {
   margin: 5px !important;
-}
-
-.input-text .qty text {
-  width: 45px;
-}
-
-input#quantity.input-text.qty.text {
-  width: 45px; /* Ajusta el ancho según tus necesidades */
 }/*# sourceMappingURL=main.css.map */
