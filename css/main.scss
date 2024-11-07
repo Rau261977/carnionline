@@ -851,7 +851,7 @@ body .product-container:hover {
     font-weight: 500;
 }
 .woocommerce .woocommerce-result-count {
-    margin: 1rem;
+    margin: 1rem !important;
     font-size: larger;
 }
 /* Botón personalizado */
@@ -1109,4 +1109,58 @@ body .product-container:hover {
 .text-left {
     margin-left: 6rem !important;
     padding-left: 6rem !important;
+}
+.woocommerce-pagination {
+    display: flex;
+    justify-content: center; /* Centra la paginación horizontalmente */
+    margin-top: 20px; /* Espacio superior opcional */
+}
+
+.woocommerce-pagination .page-numbers {
+    display: flex;
+    gap: 8px; /* Espacio entre los elementos de paginación */
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.woocommerce-pagination .page-numbers li {
+    display: inline; /* Asegura que los elementos se alineen en una fila */
+}
+
+.woocommerce-pagination .page-numbers a,
+.woocommerce-pagination .page-numbers .current {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.woocommerce-pagination .page-numbers a:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.woocommerce-pagination .page-numbers .current {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    pointer-events: none; /* Desactiva el clic en la página actual */
+}
+
+.woocommerce-pagination .page-numbers .next {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.woocommerce-pagination .page-numbers .next:hover {
+    background-color: #555;
+    border-color: #555;
+    color: #fff;
 }
