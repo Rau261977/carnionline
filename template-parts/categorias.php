@@ -150,7 +150,6 @@
     </div>
 </div>
 <hr class="border">
-</div>
 <style>
     .grow {
         transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
