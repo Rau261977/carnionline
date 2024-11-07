@@ -85,7 +85,7 @@ ul.products li.product {
 	box-sizing: border-box;
 	background-color: white; /* Color de fondo para visualizar la tarjeta */
 	border: 1px solid #999;
-	border-radius: 5px;
+	border-radius: 20px;
 	text-align: center;
 }
 
@@ -101,16 +101,27 @@ ul.products li.product .button {
 	margin-top: 0.5em;
 }
 
-/* Quitar el flotado en resoluciones mayores, ya que grid se encarga de la distribución */
-@media screen and (min-width: 48em) {
+/* Ajustes para pantallas xs */
+@media screen and (max-width: 48em) {
 	ul.products {
 		grid-template-columns: repeat(
 			auto-fill,
-			minmax(200px, 1fr)
-		); /* Ancho adaptable según el tamaño de pantalla */
+			minmax(150px, 1fr)
+		); /* Reduce el ancho mínimo en pantallas xs */
+		gap: 1em; /* Reduce el espacio entre productos en pantallas pequeñas */
+	}
+
+	ul.products li.product {
+		padding: 0.5em; /* Reduce el padding para tarjetas de productos en xs */
+		border-radius: 20px; /* Opcional: Ajusta el borde */
 	}
 }
-
+@media screen and (min-width: 75em) {
+	/* 75em es aproximadamente 1200px */
+	ul.products {
+		grid-template-columns: repeat(5, 1fr); /* Muestra 5 productos por fila */
+	}
+}
 /**
  * Single product
  */

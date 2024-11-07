@@ -11558,7 +11558,8 @@ textarea.form-control-lg {
 @media (max-width: 576px) {
   .custom-logo {
     padding-top: 10px;
-    width: 5rem;
+    width: 4.2rem;
+    margin-top: -35px;
   }
 }
 /* Ajustes para pantallas extra grandes (1200px o más) */
@@ -11673,6 +11674,7 @@ textarea.form-control-lg {
   border: #222 !important;
   color: #111 !important;
   border-radius: 10px !important;
+  font-size: 13px;
   /* Color del texto del botón toggle */
 }
 
@@ -12178,9 +12180,9 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .whatsapp-icon {
   cursor: pointer;
-  position: fixed;
+  position: fixed !important;
   right: 10px;
-  bottom: 110px;
+  bottom: 20px;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -12197,13 +12199,16 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 @media (min-width: 576px) {
   .whatsapp-icon {
-    right: 30px; /* Cambiar la distancia del lado derecho */
-    bottom: 30px; /* Ajustar la distancia desde el fondo */
+    position: fixed !important;
+    bottom: 50px; /* Ajusta la distancia desde el fondo según lo necesites */
+    right: 10px;
+    z-index: 999;
   }
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .whatsapp-icon img {
     height: 60px;
+    bottom: 20px !important;
   }
 }
 .whatsapp-icon:hover {
@@ -12359,9 +12364,9 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 }
 
 .scroll-image {
-  width: 7rem;
+  width: 6rem;
   position: fixed; /* Mantenerla en la misma posición mientras se hace scroll */
-  top: 30px; /* Ajusta según sea necesario */
+  top: 46px; /* Ajusta según sea necesario */
   left: 30px; /* Ajusta según sea necesario */
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
   display: none; /* Ocultamos la imagen por defecto */
@@ -12511,4 +12516,24 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .input-text.qty {
   width: 45px;
+}
+
+/* CSS para pantallas menores a 576px */
+@media (max-width: 576px) {
+  .add_to_cart_button {
+    visibility: hidden; /* Oculta el texto original */
+    position: relative;
+  }
+  .add_to_cart_button::after {
+    content: "Añadir"; /* Muestra solo "Añadir" */
+    visibility: visible;
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffca00 !important;
+    padding: 5px 10px !important;
+    border-radius: 50px !important;
+  }
 }/*# sourceMappingURL=main.css.map */

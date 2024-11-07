@@ -1,5 +1,5 @@
 <div class="fixed-category">
-    <div class="container px-2 pt-5">
+    <div class="container px-2 pt-4">
 
         <div class="row pt-4">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/pollo')); ?>" class="text-decoration-none">
@@ -158,7 +158,7 @@
     }
 
     .grow:hover {
-        transform: translateY(-5px);
+        transform: translateY(15px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         border-color: #333;
         background-color: white;
@@ -183,7 +183,7 @@
     .fixed-category {
         position: fixed;
         left: 20px;
-        top: 30%;
+        top: 55%;
         transform: translateY(-50%);
         z-index: 1000;
         width: 7rem;
@@ -195,6 +195,8 @@
             right: 0;
             width: 80px;
             align-items: end;
+            top: 34%;
+
         }
     }
 

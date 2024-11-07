@@ -112,7 +112,7 @@
 	</div> <!-- Cierre de #page -->
 	<?php wp_footer(); ?>
 
-	<a href="https://api.whatsapp.com/send?phone=1111111&text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer" class="whatsapp-icon" style="display: inline-block;">
+	<a href="https://api.whatsapp.com/send?phone=1111111&text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer" class="whatsapp-icon">
 		<span>Contacta por WhatsApp</span>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/whatsapp-icon.png" alt="Icono de WhatsApp">
 	</a>
