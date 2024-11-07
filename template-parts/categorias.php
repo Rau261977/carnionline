@@ -193,7 +193,7 @@
         .fixed-category {
             left: auto;
             right: 0;
-            width: 80px;
+            width: 90px;
             align-items: end;
             top: 34%;
 

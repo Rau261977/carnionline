@@ -1,0 +1,21 @@
+/* CSS para pantallas menores a 576px */
+@media (max-width: 576px) {
+    .add_to_cart_button {
+        visibility: hidden; /* Oculta el texto original */
+        position: relative;
+    }
+
+    .add_to_cart_button::after {
+        content: "Añadir al carrito"; /* Muestra solo "Añadir" */
+        visibility: visible;
+        font-size: 12px; /* Ajusta el tamaño del texto */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #ffca00 !important;
+        padding: 3px 3px !important;
+        border-radius: 50px !important;
+        margin-top: -3px;
+    }
+}

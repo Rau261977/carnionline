@@ -75,6 +75,26 @@
                     </div>
                 </a>
             </div>
+            <div class="col-auto pt-3">
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/picada')); ?>" class="text-decoration-none">
+                    <div class="card grow" style="width: 100px; height: 120px">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/picadora.png" class="card-img-top" alt="parrilla">
+                            <h6 class="card-text text-center mt-2">picada</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-auto pt-3">
+                <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/huesos')); ?>" class="text-decoration-none">
+                    <div class="card grow" style="width: 100px; height: 120px">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/huesos.png" class="card-img-top" alt="parrilla">
+                            <h6 class="card-text text-center mt-2">huesos</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
         </div>
     </div>

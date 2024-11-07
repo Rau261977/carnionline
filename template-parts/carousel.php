@@ -6,31 +6,31 @@
         <div class="carousel-item active" data-bs-interval="3000">
             <img src="<?php echo get_template_directory_uri(); ?>/img/carousel/asados1.jpg" loading="lazy" class="d-block w-100" alt="imagen promocional del slider">
             <div class="carousel-card">
-                <h2 style="margin-left: 15px;">NOVILLITO Y TERNERA DE 1RA CALIDAD</h2>
+                <h2>NOVILLITO Y TERNERA DE 1RA CALIDAD</h2>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="3000">
             <img src="<?php echo get_template_directory_uri(); ?>/img/carousel/cerdos3.jpg" loading="lazy" class="d-block w-100" alt="imagen promocional del slider">
             <div class="carousel-card">
-                <h2 style="margin-left: 25px;">CORTES DE CERDO ESPECIALES </h2>
+                <h2 style="margin-left: 15px;">CORTES DE CERDO ESPECIALES </h2>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="3000">
             <img src="<?php echo get_template_directory_uri(); ?>/img/carousel/chori2.jpg" loading="lazy" class="d-block w-100" alt="imagen promocional del slider">
             <div class="carousel-card">
-                <h2 style="margin-left: 18px;">EMBUTIDOS FRESCOS ARTESANALES</h2>
+                <h2>EMBUTIDOS FRESCOS ARTESANALES</h2>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="3000">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/carousel/polloasado.jpeg" loading="lazy" class="d-block w-100" alt="imagen promocional del slider">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/carousel/pollo.jpg" loading="lazy" class="d-block w-100" alt="imagen promocional del slider">
             <div class="carousel-card">
-                <h2 style="margin-left: 18px;">POLLOS, HUEVOS <br>Y PRODUCTOS<br> DE GRANJA</h2>
+                <h2>POLLOS, HUEVOS <br>Y PRODUCTOS<br> DE GRANJA</h2>
             </div>
         </div>
         <div class="carousel-item" data-bs-interval="3000">
             <img src="<?php echo get_template_directory_uri(); ?>/img/carousel/hamb.jpg" loading="lazy" class="d-block w-100" alt="imagen promocional del slider">
             <div class="carousel-card">
-                <h2 style="margin-left: 18px;">MILANESAS y<br>HAMBURGUESAS CASERAS</h2>
+                <h2>MILANESAS y<br>HAMBURGUESAS CASERAS</h2>
             </div>
         </div>
     </div>
@@ -135,6 +135,12 @@
         letter-spacing: 2px;
     }
 
+    @media (max-width: 576px) {
+        .carousel-card h2 {
+            font-size: 1.3rem;
+        }
+    }
+
     .carousel-card p {
         font-size: 1rem;
         margin: 0;
@@ -143,18 +149,10 @@
     /* Ajustes para pantallas pequeñas */
     @media (max-width: 576px) {
         .carousel-card {
-            width: 80%;
-            left: 50%;
-            /* Centra la card en pantallas pequeñas */
+            width: 180px;
+            right: 50%;
             padding: 10px;
-        }
-
-        .carousel-card h2 {
-            font-size: 1.25rem;
-        }
-
-        .carousel-card p {
-            font-size: 0.875rem;
+            height: 90px;
         }
     }
 </style>

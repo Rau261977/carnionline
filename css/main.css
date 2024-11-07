@@ -11631,6 +11631,14 @@ textarea.form-control-lg {
   color: #333333; /* Color del texto */
 }
 
+@media (max-width: 576px) {
+  .product .woocommerce-loop-product__title {
+    font-size: 1.1rem;
+    color: #000;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
 /* Ajusta el botón "Añadir a la lista de deseos" */
 .woosw-btn {
   font-size: 18px; /* Tamaño de la fuente del botón */
@@ -12100,12 +12108,12 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 /************************************************************************/
 /* Estilo general para el botón de agregar al carrito */
 .add_to_cart_button {
-  margin-top: 0rem !important;
+  margin-top: 10px !important;
   margin-bottom: 0.6rem !important;
   display: inline-block !important;
   background-color: white !important; /* Color de fondo */
-  font-size: 14px !important;
-  font-weight: 600 !important;
+  font-size: 14px;
+  font-weight: 600;
   padding: 5px 8px !important; /* Espaciado interno */
   border: 2px solid #ffca00 !important; /* Borde de 1px con color */
   border-radius: 50px !important; /* Bordes redondeados */
@@ -12114,6 +12122,13 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   transition: background-color 0.3s ease, transform 0.3s ease !important;
 }
 
+/* Para pantallas más pequeñas */
+@media (max-width: 576px) {
+  .add_to_cart_button {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
 /* Efecto hover */
 .add_to_cart_button:hover {
   background-color: #ffca00 !important; /* Color de fondo al hacer hover */
@@ -12126,23 +12141,6 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   transform: scale(0.98); /* Efecto de clic */
 }
 
-/* Asegurar que el enlace se vea como botón */
-.add_to_cart_button {
-  text-decoration: none;
-  width: -moz-fit-content;
-  width: fit-content; /* Mantiene el tamaño ajustado al contenido */
-  margin-left: auto;
-  margin-right: auto; /* Centrará el botón dentro de su contenedor */
-  display: block; /* Necesario para que `margin-left` y `margin-right` funcionen correctamente */
-}
-
-/* Para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .add_to_cart_button {
-    padding: 12px 0;
-    font-size: 14px;
-  }
-}
 /****************************************************************************************/
 /* Oculta el icono de wishlist por defecto */
 .related.products .product .wishlist-icon {
@@ -12518,22 +12516,6 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   width: 45px;
 }
 
-/* CSS para pantallas menores a 576px */
-@media (max-width: 576px) {
-  .add_to_cart_button {
-    visibility: hidden; /* Oculta el texto original */
-    position: relative;
-  }
-  .add_to_cart_button::after {
-    content: "Añadir"; /* Muestra solo "Añadir" */
-    visibility: visible;
-    font-size: 16px; /* Ajusta el tamaño del texto */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #ffca00 !important;
-    padding: 5px 10px !important;
-    border-radius: 50px !important;
-  }
+.add-to-cart-wrapper {
+  margin: 0 0 -10px;
 }/*# sourceMappingURL=main.css.map */

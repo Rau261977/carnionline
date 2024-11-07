@@ -6,23 +6,32 @@
 </div>
 
 
-
 <style>
     .image-section-fotos {
         display: flex;
         gap: 3px;
-        /* Espacio entre imágenes */
         justify-content: center;
-        /* Centra las imágenes horizontalmente */
         align-items: center;
-        /* Centra las imágenes verticalmente */
         margin: 3rem 0;
         width: 100%;
+        flex-wrap: wrap;
+        /* Permite que las imágenes pasen a la siguiente línea si no caben */
     }
 
     .image-section-fotos img {
         width: 330px;
-        /* Ajusta el ancho de cada imagen */
         height: auto;
+    }
+
+    /* Ajustes para pantallas extra pequeñas */
+    @media (max-width: 576px) {
+        .image-section-fotos img {
+            width: 100%;
+            /* Ocupa el ancho completo del contenedor */
+            max-width: 150px;
+            /* Tamaño máximo de cada imagen en pantallas XS */
+            margin: 2px;
+            /* Espacio entre imágenes */
+        }
     }
 </style>

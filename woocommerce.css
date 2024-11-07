@@ -631,9 +631,19 @@ p.no-comments {
 .yith_wc_input_text__field {
 	display: block; /* Asegúrate de que se muestre como un bloque */
 	width: 100%; /* Ajusta el ancho */
-	margin-top: -5px;
+	margin-top: -12px;
+	margin-bottom: -12px;
 	font-size: 0.9rem;
 }
+@media (max-width: 576px) {
+	.yith_wc_input_text__field {
+		width: 100%; /* Asegúrate de que el campo ocupe todo el ancho disponible */
+		font-size: 0.8rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+		margin-top: -20px; /* Ajusta el margen superior */
+		margin-bottom: -20px; /* Ajusta el margen inferior */
+	}
+}
+
 .product-image-wrapper {
 	position: relative; /* Para asegurar que la línea esté bien colocada */
 }
