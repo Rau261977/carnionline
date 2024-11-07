@@ -24,6 +24,10 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
+		<?php
+		// Incluir el slider destacados
+		get_template_part('template-parts/categorias');
+		?>
 
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'carnionline'); ?></a>
 		<div class="announcement-bar d-none d-lg-block fixed-top">

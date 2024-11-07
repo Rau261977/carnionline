@@ -43,15 +43,7 @@ $container-padding-x: 1rem;
     padding-top: 40px;
 }
 
-@media (min-width: 992px) {
-    .container-lg, .container-md, .container-sm, .container {
-        max-width: 98% !important;
-    }
-}
 
-.container-lg, .container-md, .container-sm, .container {
-    max-width: 98% !important;
-}
 
 
 .announcement-bar {
@@ -859,7 +851,7 @@ body .product-container:hover {
     font-weight: 500;
 }
 .woocommerce .woocommerce-result-count {
-    margin: 0 0 1rem 1rem;
+    margin: 1rem;
     font-size: larger;
 }
 /* Botón personalizado */

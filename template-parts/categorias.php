@@ -227,5 +227,6 @@
         align-items: center;
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 8px;
+        border: 1px solid #999;
     }
 </style>
