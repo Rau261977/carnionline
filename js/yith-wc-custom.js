@@ -14,9 +14,7 @@ jQuery(document).ready(function ($) {
 
 		// Asegúrate de que el valor de la nota no esté vacío antes de realizar la solicitud
 		if (!comments) {
-			alert(
-				'Por favor, agrega una nota antes de añadir el producto al carrito.'
-			);
+			alert('Por favor, no olvide aclarar como desea el corte.');
 			return;
 		}
 

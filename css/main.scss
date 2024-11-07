@@ -104,7 +104,7 @@ $container-padding-x: 1rem;
 @media (max-width: 576px) { 
     .custom-logo {
         padding-top: 10px;
-        width: 3rem; 
+        width: 5rem; 
     }
 }
 /* Ajustes para pantallas extra grandes (1200px o más) */
@@ -254,13 +254,29 @@ $container-padding-x: 1rem;
 }
 
 #woofc-count {
-    margin: 26px;
+    margin: 2px;
     /*display: none;  Oculta el icono inicialmente */
     position: fixed; /* Para que el icono se mantenga visible al hacer scroll */
-    top: 20px; /* Ajusta la posición vertical del icono */
+    top: 10px; /* Ajusta la posición vertical del icono */
     right: 20px; /* Ajusta la posición horizontal del icono */
-    z-index: 999; /* Asegura que el icono esté encima de otros elementos */
+    z-index: 9999; /* Asegura que el icono esté encima de otros elementos */
+    background-color: #ffca00;
+    height: 36px;
+    line-height:0px;
+    border: 2px solid #000000;
 }
+
+.woofc-count span {
+    background-color: red !important;
+}
+
+.woofc-count i {
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+}
+
+
 
 /*****************************************/
 
@@ -1083,4 +1099,6 @@ body .product-container:hover {
 .aws-container .aws-search-form .aws-form-btn {
     margin: 5px !important;
 }
-
+.input-text.qty {
+    width: 45px;
+}

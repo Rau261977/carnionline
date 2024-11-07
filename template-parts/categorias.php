@@ -1,7 +1,7 @@
-<div class="fixed-category pt-5">
-    <div class="container px-2 pb-2 pt-5">
+<div class="fixed-category">
+    <div class="container px-2 pt-5">
 
-        <div class="row pt-1">
+        <div class="row pt-4">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/pollo')); ?>" class="text-decoration-none">
                 <div class="grow column">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -187,6 +187,15 @@
         transform: translateY(-50%);
         z-index: 1000;
         width: 7rem;
+    }
+
+    @media (max-width: 576px) {
+        .fixed-category {
+            left: auto;
+            right: 0;
+            width: 80px;
+            align-items: end;
+        }
     }
 
     .fixed-category .card-img-top {
