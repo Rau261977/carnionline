@@ -183,7 +183,7 @@
     .fixed-category {
         position: fixed;
         left: 20px;
-        top: 50%;
+        top: 30%;
         transform: translateY(-50%);
         z-index: 1000;
         width: 7rem;
