@@ -88,6 +88,25 @@
   /* Elimina cualquier regla de visibilidad que dependa de hover */
 }
 
+@media (max-width: 576px) {
+  .onsale {
+    position: absolute;
+    width: 7rem !important; /* Ajusta el tamaño según lo que necesites */
+    height: 3rem !important; /* Debe ser igual a width */
+    padding: 5px !important;
+    background-color: #ffca00 !important;
+    border: 2px solid #000 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important; /* Ajustar tamaño del texto */
+    font-weight: bold !important;
+    line-height: 1.2; /* Ajustar la altura de la línea para mejorar el espaciado del texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10 !important;
+    /* Elimina cualquier regla de visibilidad que dependa de hover */
+  }
+}
 /* Estilos para el elemento .onsale */
 body .product .onsale {
   position: absolute;
@@ -98,4 +117,11 @@ body .product .onsale {
   align-items: center;
   justify-content: center;
   z-index: 10 !important;
+}
+
+@media (max-width: 576px) {
+  body .product .onsale {
+    top: -10px; /* Ajusta la posición vertical en pantallas pequeñas */
+    left: -20px; /* Ajusta la posición horizontal en pantallas pequeñas */
+  }
 }/*# sourceMappingURL=product.css.map */

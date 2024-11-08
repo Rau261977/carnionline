@@ -90,6 +90,12 @@
     z-index: 10 !important;
     /* Elimina cualquier regla de visibilidad que dependa de hover */
 }
+@media (max-width: 576px) {
+
+    .onsale {
+       height: 2rem;
+}
+}
 /* Estilos para el elemento .onsale */
 
 body .product .onsale {
@@ -101,4 +107,11 @@ body .product .onsale {
     align-items: center;
     justify-content: center;
     z-index: 10 !important;
+}
+
+@media (max-width: 576px) {
+    body .product .onsale {
+        top: -10px; /* Ajusta la posición vertical en pantallas pequeñas */
+        left: -20px; /* Ajusta la posición horizontal en pantallas pequeñas */
+    }
 }

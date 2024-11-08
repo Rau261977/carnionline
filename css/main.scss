@@ -1164,3 +1164,13 @@ body .product-container:hover {
     border-color: #555;
     color: #fff;
 }
+
+.product-image-wrapper {
+    position: relative;
+}
+
+.product-image-border {
+    width: 100%;
+    border-bottom: 0.5px solid #999; /* Grosor más fino */
+    margin-top: 10px; /* Ajusta el espacio entre la imagen y la línea */
+}

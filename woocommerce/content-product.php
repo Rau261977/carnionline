@@ -33,6 +33,8 @@ if (empty($product) || ! $product->is_visible()) {
     // Envoltorio de imagen
     echo '<div class="product-image-wrapper">';
     do_action('woocommerce_before_shop_loop_item_title');
+    // Línea debajo de la imagen
+    echo '<div class="product-image-border"></div>'; // Esta es la línea que se agregará debajo de la imagen
     echo '</div>';
 
     // Título del producto

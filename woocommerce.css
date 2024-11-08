@@ -645,21 +645,6 @@ p.no-comments {
 	}
 }
 
-.product-image-wrapper {
-	position: relative; /* Para asegurar que la línea esté bien colocada */
-}
-
-.product-image-wrapper::after {
-	content: ''; /* Crear un contenido vacío */
-	display: block; /* Hacer que sea un bloque */
-	position: relative; /* Posicionar el elemento relativamente */
-	width: 140%; /* Ancho extendido */
-	height: 1px; /* Altura de la línea */
-	background-color: #ccc; /* Color de la línea */
-	margin-top: 3px; /* Espacio entre la imagen y la línea */
-	left: -20%; /* Centrado a partir del centro, extendiendo a ambos lados */
-}
-
 .product-tags {
 	margin-top: -1px; /* Espacio entre el título y las etiquetas */
 	margin-bottom: 2px;
