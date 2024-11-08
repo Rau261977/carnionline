@@ -34,17 +34,46 @@ $container-padding-x: 1rem;
 //@import "product";
 @import "./bootstrap/scss/bootstrap";
 
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 97%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container-sm {
+        max-width: 98%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md {
+        max-width: 98%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-lg {
+        max-width: 98%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl {
+        max-width: 98%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl {
+        max-width: 98%;
+    }
+}
 
 
 // Then add additional custom code here
 
 /************* HEADER ***********************/
-#masthead {
-    padding-top: 40px;
-}
-
-
-
 
 .announcement-bar {
     font-size: 0.8rem;
@@ -682,8 +711,8 @@ body .product-container:hover {
     margin-bottom: 0.6rem !important;
     display: inline-block !important;
     background-color: white !important; /* Color de fondo */
-    font-size: 14px;
-    font-weight:600;
+    font-size: 13px;
+    font-weight:500;
     padding: 5px 8px !important; /* Espaciado interno */
     border: 2px solid $primary !important; /* Borde de 1px con color */
     border-radius: 50px !important; /* Bordes redondeados */
@@ -1106,10 +1135,6 @@ body .product-container:hover {
     margin: 0 0 -10px;
 }
 
-.text-left {
-    margin-left: 6rem !important;
-    padding-left: 6rem !important;
-}
 .woocommerce-pagination {
     display: flex;
     justify-content: center; /* Centra la paginación horizontalmente */

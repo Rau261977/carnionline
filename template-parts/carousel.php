@@ -34,11 +34,11 @@
             </div>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <button class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <button class="carousel-control-next d-none d-sm-block" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
@@ -94,6 +94,23 @@
         /* Asegura que esté sobre las imágenes del carrusel */
         pointer-events: none;
         /* Evita que el cursor interactúe con esta imagen */
+    }
+
+    @media (max-width: 576px) {
+
+        .fixed-logo {
+            position: absolute;
+            align-items: baseline;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            width: 35%;
+            max-width: 35%;
+            z-index: 10;
+            /* Asegura que esté sobre las imágenes del carrusel */
+            pointer-events: none;
+            /* Evita que el cursor interactúe con esta imagen */
+        }
     }
 
     .carousel-item {

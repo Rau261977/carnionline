@@ -22,8 +22,6 @@
 /* Imagen de producto */
 .product img {
   height: auto;
-  border-radius: 8px 8px 0 0; /* Borde redondeado solo en la parte superior */
-  margin-bottom: 1rem; /* Espacio debajo de la imagen */
 }
 
 /* Título del producto */
@@ -90,21 +88,7 @@
 
 @media (max-width: 576px) {
   .onsale {
-    position: absolute;
-    width: 7rem !important; /* Ajusta el tamaño según lo que necesites */
-    height: 3rem !important; /* Debe ser igual a width */
-    padding: 5px !important;
-    background-color: #ffca00 !important;
-    border: 2px solid #000 !important;
-    color: #fff !important;
-    font-size: 1.2rem !important; /* Ajustar tamaño del texto */
-    font-weight: bold !important;
-    line-height: 1.2; /* Ajustar la altura de la línea para mejorar el espaciado del texto */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10 !important;
-    /* Elimina cualquier regla de visibilidad que dependa de hover */
+    height: 2rem;
   }
 }
 /* Estilos para el elemento .onsale */

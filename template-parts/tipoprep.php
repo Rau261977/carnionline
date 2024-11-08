@@ -1,6 +1,6 @@
-<div class="container py-3 justify-content-center">
-    <div class="d-flex justify-content-center align-items-center">
-        <h3 class="card-text-title text-center">BÚSQUEDA POR TIPO DE PREPARACIÓN</h3>
+<div class="container py-3">
+    <div class="text-center">
+        <h3 class="card-text-title">BÚSQUEDA POR TIPO DE PREPARACIÓN</h3>
     </div>
     <div class="container-fluid py-2 pt-2">
         <div class="row gx-4 justify-content-center">
@@ -103,20 +103,6 @@
 </div>
 
 <style>
-    h3.card-text {
-        color: #333;
-        letter-spacing: 1.2px;
-        font-weight: 600;
-        font-size: 2rem;
-    }
-
-    h6.card-text {
-        color: #222;
-        letter-spacing: 1.2px;
-        font-weight: 500;
-        font-size: 1rem;
-    }
-
     .card-text-title {
         position: relative;
         display: inline-block;

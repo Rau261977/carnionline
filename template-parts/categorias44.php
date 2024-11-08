@@ -125,7 +125,7 @@
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <?php
                             $upload_dir = wp_upload_dir();
-                            $image_url = $upload_dir['baseurl'] . '/2024/10/ofertas.png';
+                            $image_url = $upload_dir['baseurl'] . '/2024/11/ofertas.png';
                             ?>
                             <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="aves">
                             <h6 class="card-text text-center mt-2">ofertas</h6>

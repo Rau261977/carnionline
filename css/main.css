@@ -246,7 +246,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
-  margin-left: 5rem;
+  margin-left: 1rem;
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -11501,11 +11501,37 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/************* HEADER ***********************/
-#masthead {
-  padding-top: 40px;
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 97%;
+  }
 }
-
+@media (min-width: 576px) {
+  .container-sm {
+    max-width: 98%;
+  }
+}
+@media (min-width: 768px) {
+  .container-md {
+    max-width: 98%;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg {
+    max-width: 98%;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl {
+    max-width: 98%;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl {
+    max-width: 98%;
+  }
+}
+/************* HEADER ***********************/
 .announcement-bar {
   font-size: 0.8rem;
   border-bottom: 1px solid var(--bs-gray);
@@ -12104,8 +12130,8 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   margin-bottom: 0.6rem !important;
   display: inline-block !important;
   background-color: white !important; /* Color de fondo */
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   padding: 5px 8px !important; /* Espaciado interno */
   border: 2px solid #ffca00 !important; /* Borde de 1px con color */
   border-radius: 50px !important; /* Bordes redondeados */
@@ -12510,11 +12536,6 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .add-to-cart-wrapper {
   margin: 0 0 -10px;
-}
-
-.text-left {
-  margin-left: 6rem !important;
-  padding-left: 6rem !important;
 }
 
 .woocommerce-pagination {
