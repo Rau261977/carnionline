@@ -1,9 +1,8 @@
 <div class="container pt-2">
     <hr class="border">
-    <div class="d-flex justify-content-center align-items-center d-none d-sm-block">
-        <h3 class="card-text-title text-center align-item-center mt-2 pb-3">Los mejores productos</h3>
+    <div class="text-center">
+        <h3 class="card-text-title">Los mejores productos</h3>
     </div>
-
     <h4 class="text-left">
         <a href="/categoria/carne-vacuna">
             Carne vacuna <span style="font-size: 1.4rem;">(ver más...)</span>
