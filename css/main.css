@@ -11537,31 +11537,11 @@ textarea.form-control-lg {
 }
 
 .announcement-bar {
-  overflow: hidden;
+  overflow: hidden !important;
   font-size: 0.8rem;
   border-bottom: 1px solid var(--bs-gray);
   background-color: #ffca00;
-}
-.announcement-bar_list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  display: inline-flex;
-  margin: 0 -10px;
-  color: #000000;
-}
-.announcement-bar_list li {
-  margin: 0 10px;
-  display: flex;
-  align-items: center;
-}
-.announcement-bar_list li .bi {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  margin-right: 6px;
+  position: relative;
 }
 
 .site-header {
@@ -12612,20 +12592,19 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   width: 3.3rem;
   padding: 1px;
   border: 1px solid #000;
+  position: relative;
 }
 
-.grow {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  max-width: 3.5rem;
-}
-
-.grow:hover {
+.custom-card:hover {
   transform: translateY(15px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border-color: #333;
   background-color: #ffca00;
   width: 4.7rem;
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transform: scale(1.1);
+  z-index: 10;
 }
 
 .hover-title {
@@ -12651,7 +12630,6 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   padding-top: 0px !important;
   padding-bottom: 5px;
   background-color: white;
-  position: relative;
 }
 
 .card-tipop img {
@@ -12663,8 +12641,4 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 .card-tipop h6, .card-tipop .h6 {
   font-size: 1rem; /* Ajusta el tamaño del texto */
   margin-top: 8px;
-}
-
-.card-tipop:hover {
-  z-index: 1000; /* Eleva la tarjeta por encima de otros elementos */
 }/*# sourceMappingURL=main.css.map */

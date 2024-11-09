@@ -5,7 +5,7 @@
 
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/pollo')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
@@ -21,7 +21,7 @@
 
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/cerdo')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir(); // Obtiene información de la carpeta de uploads
@@ -34,7 +34,7 @@
         </div>
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/vaca')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
@@ -47,7 +47,7 @@
         </div>
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/mayorista')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
@@ -60,7 +60,7 @@
         </div>
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/elaborados')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
@@ -73,7 +73,7 @@
         </div>
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/embutidos')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
@@ -86,7 +86,7 @@
         </div>
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/varios')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
@@ -99,7 +99,7 @@
         </div>
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/achuras')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
@@ -112,7 +112,7 @@
         </div>
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/ofertas')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
@@ -125,7 +125,7 @@
         </div>
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/combos')); ?>" class="text-decoration-none">
-                <div class="custom-card grow">
+                <div class="custom-card">
 
                     <?php
                     $upload_dir = wp_upload_dir();
