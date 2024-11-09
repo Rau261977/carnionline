@@ -33,7 +33,7 @@
             </a>
         </div>
         <div class="col-auto pt-1 pb-1">
-            <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/vaca')); ?>" class="text-decoration-none">
+            <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/carne-vacuna')); ?>" class="text-decoration-none">
                 <div class="custom-card">
 
                     <?php

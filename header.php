@@ -26,7 +26,7 @@
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'carnionline'); ?></a>
 
-        <div class="announcement-bar d-none d-lg-block fixed-top">
+        <div class="announcement-bar card-wrapper d-none d-lg-block fixed-top">
             <div class="scroll-image pt-4" style="display: none;">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/mariopng.png" alt="Imagen al hacer scroll" />
             </div>

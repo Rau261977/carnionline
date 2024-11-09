@@ -11537,11 +11537,10 @@ textarea.form-control-lg {
 }
 
 .announcement-bar {
-  overflow: hidden !important;
+  overflow: hidden;
   font-size: 0.8rem;
   border-bottom: 1px solid var(--bs-gray);
   background-color: #ffca00;
-  position: relative;
 }
 
 .site-header {
@@ -12593,18 +12592,23 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   padding: 1px;
   border: 1px solid #000;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  z-index: 1;
 }
 
 .custom-card:hover {
-  transform: translateY(15px);
+  transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border-color: #333;
   background-color: #ffca00;
-  width: 4.7rem;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  transform: scale(1.1);
-  z-index: 10;
+  z-index: 10; /* Aumentar z-index solo en hover */
+}
+
+.custom-card h6, .custom-card .h6 {
+  text-align: center;
 }
 
 .hover-title {
@@ -12612,6 +12616,7 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   font-size: 1rem;
   color: #000;
   margin-top: 2px;
+  align-items: center;
 }
 
 .custom-card:hover .hover-title {
@@ -12641,4 +12646,8 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 .card-tipop h6, .card-tipop .h6 {
   font-size: 1rem; /* Ajusta el tamaño del texto */
   margin-top: 8px;
+}
+
+.card-wrapper {
+  overflow: visible;
 }/*# sourceMappingURL=main.css.map */
