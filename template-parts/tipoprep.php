@@ -4,95 +4,76 @@
     </div>
     <div class="container-fluid py-2 pt-2">
         <div class="row gx-4 justify-content-center">
-            <div class="col-auto pt-3">
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/parrilla')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/fuego.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">parrilla</h6>
-                        </div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="col-auto pt-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/fuego.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">parrilla</h6>
+
+                </a>
+            </div>
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/olla')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/olla.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">olla</h6>
-                        </div>
-                    </div>
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/olla.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">olla</h6>
+
                 </a>
             </div>
-            <div class="col-auto pt-3">
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/pucheros')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/ollapuch.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">puchero</h6>
-                        </div>
-                    </div>
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/ollapuch.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">puchero</h6>
+
                 </a>
             </div>
-            <div class="col-auto pt-3">
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/plancha')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/sarten.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">plancha</h6>
-                        </div>
-                    </div>
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/sarten.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">plancha</h6>
+
                 </a>
             </div>
-            <div class="col-auto pt-3">
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/horno')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/horno.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">horno</h6>
-                        </div>
-                    </div>
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/horno.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">horno</h6>
+
                 </a>
             </div>
-            <div class="col-auto pt-3">
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/salteados')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/wok.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">salteados</h6>
-                        </div>
-                    </div>
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/wok.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">salteados</h6>
+
                 </a>
             </div>
-            <div class="col-auto pt-3">
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/milanesas')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/milapapa.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">milanesas</h6>
-                        </div>
-                    </div>
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/milapapa.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">milanesas</h6>
+
                 </a>
             </div>
-            <div class="col-auto pt-3">
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/picada')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/picadora.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">picada</h6>
-                        </div>
-                    </div>
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/picadora.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">picada</h6>
+
                 </a>
             </div>
-            <div class="col-auto pt-3">
+            <div class="card-tipop col-auto pt-3">
                 <a href="<?php echo esc_url(get_site_url(null, '/etiqueta-producto/huesos')); ?>" class="text-decoration-none">
-                    <div class="card grow" style="width: 100px; height: 120px">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/huesos.png" class="card-img-top" alt="parrilla">
-                            <h6 class="card-text text-center mt-2">huesos</h6>
-                        </div>
-                    </div>
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/tipoprep/huesos.png" class="card-img-top" alt="parrilla">
+                    <h6 class="card-text text-center mt-2">huesos</h6>
+
                 </a>
             </div>
 
@@ -108,7 +89,7 @@
         display: inline-block;
         /* Asegura que el ancho del subrayado se ajuste al texto */
         font-weight: 600;
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
 
     /* Estilos para pantallas pequeñas */
