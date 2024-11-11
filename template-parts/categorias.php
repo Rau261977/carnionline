@@ -64,7 +64,7 @@
 
                     <?php
                     $upload_dir = wp_upload_dir();
-                    $image_url = $upload_dir['baseurl'] . '/2024/10/hamb.png';
+                    $image_url = $upload_dir['baseurl'] . '/2024/11/hamb.png';
                     ?>
                     <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="aves">
                     <h6 class="hover-title">elaborados</h6>

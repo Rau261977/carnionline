@@ -71,7 +71,7 @@
 .onsale {
   position: absolute;
   width: 7rem !important; /* Ajusta el tamaño según lo que necesites */
-  height: 3rem !important; /* Debe ser igual a width */
+  height: 2rem !important; /* Debe ser igual a width */
   padding: 5px !important;
   background-color: #ffca00 !important;
   border: 2px solid #000 !important;

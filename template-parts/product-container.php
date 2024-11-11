@@ -1,8 +1,8 @@
-<div class="container pt-2">
+<div class="container pt-5">
     <hr class="border">
-    <div class="text-center">
-        <h3 class="card-text-title">Los mejores productos</h3>
-    </div>
+    <!--<div class="text-center">
+        <h3 class="card-text-title">Pase y vea</h3>
+    </div> -->
     <h4 class="text-left">
         <a href="/categoria/carne-vacuna">
             Carne vacuna <span style="font-size: 1.4rem;">(ver más...)</span>

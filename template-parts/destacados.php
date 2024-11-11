@@ -1,4 +1,4 @@
-<section class="destacados">
+<section class="destacados pt-4">
     <div class="d-flex justify-content-center align-items-center">
         <h3 class="card-text-title text-center">PROMOCIONES DE LA SEMANA</h3>
     </div>

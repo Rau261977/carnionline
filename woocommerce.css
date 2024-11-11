@@ -724,14 +724,18 @@ main#primary.site-main
 	margin-top: 20px; /* Ajusta los valores según tus necesidades */
 	margin-bottom: 20px;
 }
-main#primary.site-main
-	article#post-8.post-8.page.type-page.status-publish.hentry
-	h1 {
-	font-size: 4rem; /* Cambia el tamaño de fuente según lo que necesites */
-	color: #333; /* Cambia el color del texto */
-	margin-top: 10px; /* Ajusta el margen superior */
-	margin-bottom: 10px; /* Ajusta el margen inferior */
-	text-align: center; /* Ajusta la alineación, si es necesario */
+
+main#primary.site-main {
+	article#post-8.page.type-page.status-publish.hentry,
+	article#post-269.page.type-page.status-publish.hentry {
+		h1 {
+			font-size: 4rem; /* Tamaño de fuente */
+			color: #333; /* Color del texto */
+			margin-top: 10px; /* Margen superior */
+			margin-bottom: 10px; /* Margen inferior */
+			text-align: center; /* Alineación del texto */
+		}
+	}
 }
 
 .product-image {
