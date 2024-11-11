@@ -12638,6 +12638,13 @@ body .product-container:hover, body .related.products .product:hover, .related.p
   background-color: white;
 }
 
+.card-tipop:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-color: #333;
+  z-index: 10; /* Aumentar z-index solo en hover */
+}
+
 .card-tipop img {
   max-height: auto;
   -o-object-fit: contain;
@@ -12707,4 +12714,45 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 #woosw_copy_btn:focus {
   outline: none;
   box-shadow: 0 0 5px #ffca00;
+}
+
+.accordion-flush {
+  position: fixed;
+  top: 60px; /* Ajusta esta propiedad para moverlo verticalmente */
+  right: 0;
+  background-color: #ffca00;
+  color: #333;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Añade sombra para destacar */
+  overflow-y: auto; /* Permite desplazamiento si el contenido es muy alto */
+}
+
+.accordion-body {
+  width: 5rem;
+  padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffca00;
+}
+
+.accordion-button {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: #ffca00;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+
+.accordion-flush > .accordion-item > .accordion-header .accordion-button, .accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed {
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #000;
 }/*# sourceMappingURL=main.css.map */
