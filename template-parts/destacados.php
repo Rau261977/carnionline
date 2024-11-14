@@ -1,6 +1,6 @@
 <section class="destacados pt-4">
     <div class="d-flex justify-content-center align-items-center">
-        <h3 class="card-text-title text-center">PROMOCIONES DE LA SEMANA</h3>
+        <h3 class="card-text-title text-center pt-3">PROMOCIONES DE LA SEMANA</h3>
     </div>
     <div class="destacado-track pt-4">
         <?php
@@ -100,7 +100,6 @@
 <style>
     .destacados {
         /* Ajusta el alto del contenedor principal */
-        margin: auto;
         overflow: hidden;
         position: relative;
         width: 100%;

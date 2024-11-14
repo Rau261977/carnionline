@@ -1,7 +1,7 @@
-<div class="col-md-8">
+<div class="col-md-10">
 
 
-    <div class="row gx-1 justify-content-center">
+    <div class="row gx-1 justify-content-start">
 
         <div class="col-auto pt-1 pb-1">
             <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/pollo')); ?>" class="text-decoration-none">
@@ -13,7 +13,7 @@
                     ?>
                     <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="aves">
 
-                    <h6 class="hover-title">avícola</h6>
+                    <h6 class="hover-title">pollo y +</h6>
                 </div>
             </a>
         </div>

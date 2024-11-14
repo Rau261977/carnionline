@@ -453,3 +453,11 @@ function agregar_unidad_precio($precio_html, $producto)
 
 	return $precio_html;
 }
+
+add_filter('woocommerce_product_add_to_cart_text', 'custom_add_to_cart_text'); // Para la tienda y los productos en loop
+add_filter('woocommerce_product_single_add_to_cart_text', 'custom_add_to_cart_text'); // Para la página de producto individual
+
+function custom_add_to_cart_text()
+{
+	return __('Añadir', 'woocommerce');
+}

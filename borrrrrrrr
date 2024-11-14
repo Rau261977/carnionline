@@ -1,21 +1,43 @@
-/* CSS para pantallas menores a 576px */
-@media (max-width: 576px) {
-    .add_to_cart_button {
-        visibility: hidden; /* Oculta el texto original */
-        position: relative;
-    }
+<div id="flush-collapseOne" class="accordion-collapse collapse show">
+    <div class="accordion-body">
+        <div class="col-auto pt-1 pb-1">
+            <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/pollo')); ?>" class="text-decoration-none">
+                <div class="custom-card">
+                    <?php
+                    $upload_dir = wp_upload_dir();
+                    $image_url = $upload_dir['baseurl'] . '/2024/10/aves.png';
+                    ?>
+                    <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="achuras">
+                    <h6 class="hover-title">POLLO</h6>
+                </div>
+            </a>
+        </div>
 
-    .add_to_cart_button::after {
-        content: "Añadir al carrito"; /* Muestra solo "Añadir" */
-        visibility: visible;
-        font-size: 12px; /* Ajusta el tamaño del texto */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 2px solid #ffca00 !important;
-        padding: 3px 3px !important;
-        border-radius: 50px !important;
-        margin-top: -3px;
-    }
-}
+        <div class="col-auto pt-1 pb-1">
+            <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/cerdo')); ?>" class="text-decoration-none">
+                <div class="custom-card">
+                    <?php
+                    $image_url = $upload_dir['baseurl'] . '/2024/10/cerdo.png';
+                    ?>
+                    <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="cerdo">
+                    <h6 class="hover-title">CERDO</h6>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-auto pt-1 pb-1">
+            <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/carne-vacuna')); ?>" class="text-decoration-none">
+                <div class="custom-card">
+                    <?php
+                    $image_url = $upload_dir['baseurl'] . '/2024/10/vaca.png';
+                    ?>
+                    <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="vaca">
+                    <h6 class="hover-title">VACA</h6>
+                </div>
+            </a>
+        </div>
+
+        <!-- Repite este bloque para cada categoría adicional -->
+
+    </div>
+</div>

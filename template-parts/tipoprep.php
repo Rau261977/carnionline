@@ -1,4 +1,4 @@
-<div class="container py-3">
+<div class="container pt-3 py-3">
     <div class="text-center">
         <h3 class="card-text-title">BÚSQUEDA POR TIPO DE PREPARACIÓN</h3>
     </div>
@@ -88,8 +88,10 @@
         position: relative;
         display: inline-block;
         /* Asegura que el ancho del subrayado se ajuste al texto */
-        font-weight: 600;
-        font-size: 3rem;
+        font-weight: 500;
+        font-size: 4rem;
+        font-family: veneer;
+
     }
 
     /* Estilos para pantallas pequeñas */
@@ -108,20 +110,19 @@
         }
     }
 
-    .card-text-title::after {
+    /*.card-text-title::after {
         content: "";
         position: absolute;
 
         left: 5px;
         width: 100%;
         /* Hace que la línea coincida con el ancho del texto */
-        height: 1.2rem;
+    /*  height: 1.2rem;
         /* Ajusta el grosor de la línea */
-        background-color: #FFD700;
+    /*    background-color: #FFD700;
         /* Cambia el color al que prefieras */
-        z-index: -1;
+    /*z-index: -1;
         /* Coloca la línea detrás del texto */
-        transform: translateY(20px);
+    /*transform: translateY(20px);
         /* Ajusta la posición vertical de la línea */
-    }
 </style>

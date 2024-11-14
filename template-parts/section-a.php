@@ -4,7 +4,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/gustos.jpg" class="card-img-gus" alt="Imagen de gusto">
         </div>
         <div class="col-md-6">
-            <p class="text-left custom-text">
+            <p class="custom-text">
                 Visitanos o comprá por nuestra TIENDA ONLINE. Probá la increíble variedad de chorizos
                 que elaboramos. Todos los días gran surtido de productos.
             </p>
@@ -20,12 +20,12 @@
     }
 
     .custom-text {
-        font-family: veneer;
-        font-weight: 600;
+        font-family: Urbanist;
+        font-weight: 500;
         color: #333;
-        font-size: 3rem;
-        letter-spacing: 1px;
+        font-size: 2.5rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        align-items: start;
     }
 
     @media (max-width: 768px) {

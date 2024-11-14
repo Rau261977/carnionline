@@ -45,6 +45,12 @@
 
         <header id="masthead">
             <div class="container pt-5">
+                <section class="d-block d-sm-none">
+                    <?php
+                    // Incluir el slider destacados
+                    get_template_part('template-parts/verticalm');
+                    ?>
+                </section>
 
                 <div class="row align-items-center d-flex justify-content-center">
                     <div class="col-xl-3 col-12 d-flex justify-content-center logo-container-xl">
