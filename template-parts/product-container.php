@@ -4,7 +4,7 @@
         <h3 class="card-text-title">Pase y vea</h3>
     </div> -->
     <h4 class="text-left">
-        <a href="/categoria/carne-vacuna">
+        <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/carne-vacuna')); ?>" class="text-decoration-none">
             Carne vacuna <span style="font-size: 1.4rem;">(ver más...)</span>
         </a>
     </h4>
@@ -16,7 +16,7 @@
     </div>
 
     <h4 class="text-left">
-        <a href="/categoria/cerdo">
+        <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/cerdo')); ?>" class="text-decoration-none">
             Cerdo <span style="font-size: 1.4rem;">(ver más...)</span>
         </a>
     </h4>
@@ -28,7 +28,7 @@
     </div>
 
     <h4 class="text-left">
-        <a href="/categoria/pollo">
+        <a href="<?php echo esc_url(get_site_url(null, '/categoria-producto/pollo')); ?>" class="text-decoration-none">
             Pollo <span style="font-size: 1.4rem;">(ver más...)</span>
         </a>
     </h4>
