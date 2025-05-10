@@ -13,7 +13,7 @@
                     ?>
                     <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="aves">
 
-                    <h6 class="hover-title">pollo y +</h6>
+                    <h6 class="hover-title">+ pollo</h6>
                 </div>
             </a>
         </div>
@@ -54,7 +54,7 @@
                     $image_url = $upload_dir['baseurl'] . '/2024/11/mediares.png';
                     ?>
                     <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="aves">
-                    <h6 class="hover-title">mayorista</h6>
+                    <h6 class="hover-title">x mayor</h6>
                 </div>
             </a>
         </div>
@@ -67,7 +67,7 @@
                     $image_url = $upload_dir['baseurl'] . '/2024/11/hamb.png';
                     ?>
                     <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="aves">
-                    <h6 class="hover-title">elaborados</h6>
+                    <h6 class="hover-title">elab.</h6>
                 </div>
             </a>
         </div>
@@ -80,7 +80,7 @@
                     $image_url = $upload_dir['baseurl'] . '/2024/10/embutidos.png';
                     ?>
                     <img src="<?php echo esc_url($image_url); ?>" class="card-img-top" alt="aves">
-                    <h6 class="hover-title">embutidos</h6>
+                    <h6 class="hover-title">embut.</h6>
                 </div>
             </a>
         </div>

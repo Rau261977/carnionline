@@ -11548,7 +11548,8 @@ textarea.form-control-lg {
 }
 
 .custom-logo {
-  width: 4rem;
+  width: clamp(2rem, 4.3vw, 6rem);
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -11559,9 +11560,9 @@ textarea.form-control-lg {
 }
 @media (max-width: 576px) {
   .custom-logo {
-    padding-top: 10px;
-    width: 4.2rem;
-    margin-top: -35px;
+    padding-top: 0px;
+    width: 3.8rem;
+    margin-top: -65px;
   }
 }
 /* Ajustes para pantallas extra grandes (1200px o más) */
@@ -12194,15 +12195,15 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .whatsapp-icon img {
   display: block;
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 
 @media (min-width: 576px) {
   .whatsapp-icon {
     position: fixed !important;
-    bottom: 50px; /* Ajusta la distancia desde el fondo según lo necesites */
-    right: 10px;
+    bottom: 85px; /* Ajusta la distancia desde el fondo según lo necesites */
+    right: 25px;
     z-index: 999;
   }
 }
@@ -12367,8 +12368,8 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 .scroll-image {
   width: 6rem;
   position: fixed; /* Mantenerla en la misma posición mientras se hace scroll */
-  top: 46px; /* Ajusta según sea necesario */
-  left: 30px; /* Ajusta según sea necesario */
+  top: 53px;
+  left: 18px;
   z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
   display: none; /* Ocultamos la imagen por defecto */
 }
@@ -12481,6 +12482,8 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .aws-container .aws-search-form {
   font-size: 15px !important;
+  margin-left: 31px;
+  padding-top: 6px;
 }
 
 .aws-container .aws-search-form .aws-wrapper {
@@ -12659,16 +12662,18 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .card-wrapper {
   overflow: visible;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .text-left {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 5rem;
+  font-weight: 500;
   position: relative;
-  display: inline-block;
   color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
+  text-align: center;
+  font-family: "veneer";
 }
 
 .text-left::after {
@@ -12745,4 +12750,16 @@ body .product-container:hover, body .related.products .product:hover, .related.p
 
 .woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images {
   width: 5px;
+}
+
+.wll-launcher-button-container {
+  background-color: #ff0000 !important;
+  border: 1px solid #151515;
+  box-shadow: 5px 5px #000;
+}
+
+.woofc-area.woofc-style-01 .woofc-no-item, .woofc-area.woofc-style-01 .woofc-error {
+  text-align: center;
+  color: #111;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */

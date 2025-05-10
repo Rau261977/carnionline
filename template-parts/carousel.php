@@ -102,7 +102,7 @@
             position: absolute;
             align-items: baseline;
             top: 50%;
-            left: 30%;
+            left: 22%;
             transform: translate(-50%, -50%);
             width: 35%;
             max-width: 35%;

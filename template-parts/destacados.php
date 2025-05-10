@@ -112,6 +112,7 @@
         /* Ajusta el cálculo del ancho total del track */
         animation: scroll 20s linear infinite;
         /* Ajusta el tiempo de la animación para suavizar el bucle */
+        padding-bottom: 5px;
     }
 
     .destacado .card-price {
@@ -122,7 +123,6 @@
         padding-bottom: 1px;
         /* Asegura que el `<p>` esté a 1px del borde inferior */
     }
-
 
     .card.destacado {
         background-color: white;
@@ -141,6 +141,7 @@
         /* Bordes redondeados */
         margin: 0 10px;
         /* Espaciado entre las cards */
+        box-shadow: 2px 2px rgba(1, 1, 1, 0.5);
     }
 
     .card.destacado:hover {

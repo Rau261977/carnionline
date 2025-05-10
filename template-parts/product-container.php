@@ -1,4 +1,4 @@
-<div class="container pt-5">
+<div class="container pt-2">
     <hr class="border">
     <!--<div class="text-center">
         <h3 class="card-text-title">Pase y vea</h3>

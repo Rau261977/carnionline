@@ -23,7 +23,24 @@
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
+<!--
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const observer = new MutationObserver(() => {
+			const launcher = document.querySelector('.wll-launcher-button-container');
+			if (launcher) {
+				launcher.style.backgroundColor = '#FF0000';
+				observer.disconnect();
+			}
+		});
 
+		observer.observe(document.body, {
+			childList: true,
+			subtree: true
+		});
+	});
+</script>
+-->
 <?php wp_footer(); ?>
 
 </body>
