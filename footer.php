@@ -18,29 +18,16 @@
 
 		<?php
 		/* translators: 1: Theme name, 2: Theme author. */
-		printf(esc_html__('Desarrollado y diseñado por: %s - 2024', 'carnionline'), '<a href="http://creatix.click">CREATIX.CLICK</a>');
+		printf(
+			esc_html__('Desarrollado y diseñado por: %s - 2025', 'carnionline'),
+			'<a href="https://carniceriasdigitales.com"><span style="color:red">CarniceriasDigitales</span></a>'
+		);
 		?>
 	</div><!-- .site-info -->
+
 </footer><!-- #colophon -->
 </div><!-- #page -->
-<!--
-<script>
-	document.addEventListener("DOMContentLoaded", function() {
-		const observer = new MutationObserver(() => {
-			const launcher = document.querySelector('.wll-launcher-button-container');
-			if (launcher) {
-				launcher.style.backgroundColor = '#FF0000';
-				observer.disconnect();
-			}
-		});
 
-		observer.observe(document.body, {
-			childList: true,
-			subtree: true
-		});
-	});
-</script>
--->
 <?php wp_footer(); ?>
 
 </body>

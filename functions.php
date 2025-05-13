@@ -430,7 +430,7 @@ function custom_quantity_step_and_ajax()
 				});
 			});
 		</script>
-<?php
+	<?php
 	}
 }
 add_action('wp_footer', 'custom_quantity_step_and_ajax');
@@ -459,3 +459,16 @@ function custom_add_to_cart_text()
 {
 	return __('Añadir', 'woocommerce');
 }
+
+add_action('wp_footer', function () {
+	?>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const target = document.querySelector('#wll-site-launcher .shadow-card_top');
+			if (target) {
+				target.style.setProperty('display', 'none', 'important');
+			}
+		});
+	</script>
+<?php
+});

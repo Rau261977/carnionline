@@ -640,8 +640,6 @@ p.no-comments {
 	.yith_wc_input_text__field {
 		width: 100%; /* Asegúrate de que el campo ocupe todo el ancho disponible */
 		font-size: 0.8rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
-		margin-top: -20px; /* Ajusta el margen superior */
-		margin-bottom: -20px; /* Ajusta el margen inferior */
 	}
 }
 
@@ -673,7 +671,7 @@ p.no-comments {
 .woocommerce-products-header__title.page-title {
 	text-align: center;
 	position: relative;
-	display: flex;
+	display: none;
 	justify-content: center;
 	font-size: 3.5rem;
 	width: fit-content; /* Solo ocupa el ancho del texto */
@@ -688,13 +686,13 @@ p.no-comments {
 	height: 0.4rem; /* Grosor del subrayado */
 	background-color: #ffca00; /* Color del subrayado */
 }
-
 .single-product-wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	margin-inline: 10px;
 }
+
 .single-product-wrapper p {
 	font-size: 1.1rem;
 }
@@ -743,6 +741,13 @@ p.no-comments {
 	display: flex;
 	align-items: flex-start; /* Alinea verticalmente la imagen y los detalles */
 	gap: 1rem; /* Espacio entre la imagen y el contenido */
+	margin-inline: 8rem;
+}
+@media (max-width: 768px) {
+	.product-content-container {
+		display: grid;
+		margin-inline: 0.7rem;
+	}
 }
 
 main#primary.site-main
@@ -806,4 +811,83 @@ main#primary.site-main {
 	border-top: 1px solid #ddd;
 	padding-top: 20px;
 	margin-top: 20px;
+}
+/* Envolver el formulario en una tarjeta */
+.woocommerce form.woocommerce-form-login {
+	background: #fff;
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	max-width: 500px;
+	margin: 5rem auto;
+	border: 1px solid #e0e0e0;
+}
+
+/* Títulos */
+.woocommerce h2 {
+	display: none;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color: #333;
+}
+
+/* Inputs 
+.woocommerce input.input-text {
+	width: 100%;
+	padding: 0.75rem;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+	margin-top: 0.25rem;
+}
+	*/
+
+/* Checkbox y botón */
+.woocommerce .form-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.woocommerce .form-row input[type='checkbox'] {
+	margin-right: 0.5rem;
+}
+
+.woocommerce-button.button.woocommerce-form-login__submit {
+	background-color: #0071a1;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.woocommerce-button.button.woocommerce-form-login__submit:hover {
+	background-color: #005f85;
+}
+
+/* Enlace de contraseña */
+.woocommerce-LostPassword {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.woocommerce-LostPassword a {
+	color: #0071a1;
+	text-decoration: underline;
+	font-size: 0.95rem;
+}
+main#primary.site-main .entry-header {
+	text-align: center;
+}
+
+#post-10 .entry-header .entry-title {
+	display: none;
+}
+.wlr-product-message {
+	padding: 5px !important;
 }

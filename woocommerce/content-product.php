@@ -50,7 +50,7 @@ if (empty($product) || ! $product->is_visible()) {
     do_action('woocommerce_after_shop_loop_item_title');
 
     // Contenedor para el botón y la cantidad
-    echo '<div class="add-to-cart-wrapper d-flex align-items-center">';
+    echo '<div class="add-to-cart-wrapper align-items-center">';
 
     // Campo de cantidad
     echo '<div class="quantity me-2">'; // Agrega un margen derecho para separar del botón

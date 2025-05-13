@@ -598,7 +598,7 @@ $container-padding-x: 1rem;
 }
 body .product-container {
     margin: 0.7rem -0.2rem 0.7rem -0.2rem;
-    padding: 1rem 0 0 0;
+    padding: 0.5rem;
     background-color: white;
     position: relative;
     text-align: center;
@@ -689,6 +689,7 @@ body .product-container:hover {
 
 
 .add_to_cart_button {
+    width: -webkit-fill-available;
     margin-top: 10px !important;
     margin-bottom: 0.6rem !important;
     display: inline-block !important;
@@ -697,7 +698,7 @@ body .product-container:hover {
     font-weight:500;
     padding: 5px 8px !important; /* Espaciado interno */
     border: 2px solid $primary !important; /* Borde de 1px con color */
-    border-radius: 50px !important; /* Bordes redondeados */
+    border-radius: 8px !important; /* Bordes redondeados */
     cursor: pointer !important;
     text-align: center !important;
     transition: background-color 0.3s ease, transform 0.3s ease !important;
@@ -763,7 +764,7 @@ body .product-container:hover {
 .whatsapp-icon {
     cursor: pointer;
     position: fixed !important;
-    right: 10px;
+    right: 14px;
     bottom: 20px;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -771,6 +772,11 @@ body .product-container:hover {
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     z-index: 999;
+  }
+  @media (max-width: 576px) {
+.whatsapp-icon {
+    bottom: 80px;
+  }
   }
   .whatsapp-icon img {
     display: block;
@@ -1116,7 +1122,8 @@ body .product-container:hover {
 
 
 .add-to-cart-wrapper {
-    margin: 0 0 -10px;
+    width: -webkit-fill-available;
+    /*margin: 10px;*/
 }
 
 .woocommerce-pagination {
@@ -1358,4 +1365,25 @@ body .product-container:hover {
     text-align: center;
     color: #111;
     padding: 20px;
+}
+.woocommerce-product-gallery__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* Ajustá según tu diseño */
+}
+.wlr-product-message {
+    display: block;
+    padding: 2px;
+    line-height: 20px;
+    border-radius: 7px;
+    background: #fcfcfc;
+    color: #000000;
+    border: 1px solid;
+    border-color: #000000;
+    margin-top: 8px;
+}
+
+html body #wll-site-launcher .shadow-card_top {
+    display: none !important;
 }
