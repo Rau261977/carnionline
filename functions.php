@@ -389,12 +389,6 @@ function guardar_campo_personalizado_en_carrito($cart_item_data, $product_id, $v
 }
 add_filter('woocommerce_add_cart_item_data', 'guardar_campo_personalizado_en_carrito', 10, 4);
 
-
-
-
-
-
-
 //función para sumar de a 0.5--------------------
 
 function custom_quantity_step_and_ajax()
